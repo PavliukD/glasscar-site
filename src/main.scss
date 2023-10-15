@@ -53,19 +53,6 @@ a {
     text-decoration: none;
 }
 
-// @import './sass/container';
-// @import './sass/header';
-// @import './sass/hero';
-// @import './sass/calculator';
-// @import './sass/section-about';
-// @import './sass/why';
-// @import './sass/segment';
-// @import './sass/steps';
-// @import './sass//reviews';
-// @import './sass/questions';
-// @import './sass/seo';
-// @import './sass/footer';
-// @import './sass/menu';
-// @import './sass/popup';
-// @import './sass/404';
-// @import './sass/jobs';
+@import './sass/container';
+@import './partials/main-hero/hero';
+@import './partials/services/services'
