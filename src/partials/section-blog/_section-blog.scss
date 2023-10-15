@@ -1,0 +1,245 @@
+@import '../../sass/container';
+
+.services{
+    @extend .container;
+
+}
+
+.services--title-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & h2{
+        font-family: Roboto Condensed;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.96px;
+        text-transform: uppercase;
+
+        @media (min-width: 768px) {
+            font-family: Roboto Condensed;
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: -1.44px;
+        }
+    }
+
+    & a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        border-radius: 200px;
+        border: 1.4px solid #1A1A1D;
+        height: 40px;
+        padding: 0px 16px;
+        
+        transition-property: color, background-color;
+        transition-duration: 500ms;
+        transition-delay: 0;
+
+        @media (min-width: 768px) {
+            gap: 8px;
+
+            &:hover{
+                background-color: #1A1A1D;
+
+                &>svg{
+                    stroke: #fff;
+                }
+
+                &>span{
+                    color: #fff;
+                }
+            }
+        }
+
+        &>svg {
+            stroke: #1A1A1D;
+            width: 16px;
+            height: 16px;
+
+            transition-property: stroke;
+            transition-duration: 500ms;
+            transition-delay: 0;
+        }
+
+        &>span{
+            font-family: Manrope;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 16px;
+            color: #1A1A1D;
+
+            @media (min-width: 768px) {
+                font-family: Manrope;
+                font-weight: 600;
+                line-height: 22px;
+
+                transition-property: color;
+                transition-duration: 500ms;
+                transition-delay: 0;
+            }
+        }
+    }
+
+    
+}
+
+.services--content{
+    margin-top: 40px;
+
+    @media (min-width: 768px) {
+        margin-top: 80px;
+    }
+
+    &>ul{
+
+
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            grid-template-rows: min-content;
+        }
+
+        &>li{
+
+            @media (max-width: 767px) {
+                &:not(:first-child){
+                    margin-top: 32px;
+                }
+            }
+            
+            & div{
+                overflow: hidden;
+            }
+
+            @media (min-width: 768px) {
+                &:hover{
+                    & img{
+                        scale: 1.1;
+                    }
+                }
+            }
+
+            & img{
+                display: block;
+                width: 100%;
+                min-height: 240px;
+                object-fit: cover;
+                max-height: 320px;
+
+                transition-property: scale;
+                transition-duration: 500ms;
+                transition-delay: 0;
+            }
+
+            & h3{
+                font-family: Roboto Condensed;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: -0.72px;
+                text-transform: uppercase;
+                color: #1A1A1D;
+                margin-top: 24px;
+
+                @media (min-width: 768px) {
+                    font-size: 32px;
+                    font-weight: 700;
+                    letter-spacing: -0.96px;
+                }
+            }
+
+            & p{
+                display: block;
+                height: 176px;
+                width: 100%;
+                margin-top: 16px;
+                overflow: hidden;
+                color: #1A1A1D;
+                text-overflow: ellipsis;
+                whitespace: nowrap;
+                font-family: Manrope;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22px;
+
+                @media (min-width: 768px) {
+                    height: 144px;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+
+            & a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 4px;
+                height: 40px;
+                padding: 0px 16px;
+                border-radius: 200px;
+                border: 1.4px solid #4958D1;
+                background: #4958D1;
+                width: fit-content;
+                margin-top: 24px;
+
+                @media (min-width: 768px) {
+                    gap: 8px;
+                    transition-property: background-color;
+                    transition-duration: 500ms;
+                    transition-delay: 0;
+
+                    &:hover{
+                        background-color: #fff;
+
+                        & span{
+                            color: #4958D1;
+                        }
+                        
+                        & svg{
+                            stroke: #4958D1;
+                        }
+                    }
+                }
+
+                & span{
+                    font-family: Manrope;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: 16px;
+                    color: #fff;
+
+                    @media (min-width: 768px) {
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 22px;
+
+                        transition-property: color;
+                        transition-duration: 500ms;
+                        transition-delay: 0;
+                    }
+                }
+
+                & svg{
+                    width: 16px;
+                    height: 16px;
+                    stroke: #fff;
+
+                    transition-property: stroke;
+                    transition-duration: 500ms;
+                    transition-delay: 0;
+                }
+            }
+        }  
+    }
+}
