@@ -1,0 +1,195 @@
+.seo{
+    margin-top: 80px;
+
+
+    & > div{
+        position: relative;
+        height: 240px;
+        overflow: hidden;
+
+        transition-property: height;
+        transition-duration: 500ms;
+        transition-delay: 0;
+
+        &::after{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 40px;
+            background: linear-gradient(180deg, rgba(246, 246, 243, 0.00) 0%, #F6F6F3 100%);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        &.active{
+            &:after{
+                display: none;
+            }
+        }
+
+            & > ul{
+            margin-bottom: 16px;
+
+            @media (min-width: 768px) {
+                margin-bottom: 42px;
+            }
+            
+            & > li{
+                display: flex;
+                align-items: flex-start;
+
+                &:before{
+                    content: '';
+                    width: 4px;
+                    height: 4px;
+                    background-color: #1A1A1D;
+                    border-radius: 100%;
+                    margin-top: 5px;
+                    margin-right: 4px;
+                    flex-shrink: 0;
+
+                    @media (min-width: 768px) {
+                        width: 7px;
+                        height: 7px;
+                        margin-top: 7px;
+                    }
+                }
+
+                &:not(:first-child){
+                    margin-top: 8px;
+                }
+            }
+        }
+
+        & > ol{
+            list-style: none;
+        }
+
+
+        & > li{
+            &:not(:first-child){
+                margin-top: 40px;
+
+                @media (min-width: 768px) {
+                    margin-top: 100px;
+                }
+            }
+
+
+        }
+    }
+
+    & h3{
+        font-family: Roboto Condensed;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: -0.48px;
+        text-transform: uppercase;
+        color: #1A1A1D;
+        margin-bottom: 24px;
+
+        @media (min-width: 768px) {
+            font-family: Roboto Condensed;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 28px; /* 116.667% */
+            letter-spacing: -0.72px;
+            text-transform: uppercase;
+        }
+    }
+
+    & h4{
+        font-family: Manrope;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 16px;
+        color: #1A1A1D;
+        margin-bottom: 16px;
+
+        @media (min-width: 768px) {
+            font-family: Manrope;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 22px;
+        }
+    }
+
+    & p{
+        font-family: Manrope;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        color: #1A1A1D;
+        width: 100%;
+
+        @media (min-width: 768px) {
+            font-family: Manrope;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+        }
+
+        &:not(:last-child){
+            margin-bottom: 16px;
+        }
+    }
+
+    & button{
+        display: flex;
+        width: 160px;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        margin-top: 16px;
+        justify-content: space-between;
+
+        @media (min-width: 768px) {
+            width: 196px;
+        }
+
+        & div{
+            display: none;
+            width: 100%;
+            
+
+            &.active{
+                display: flex;
+                justify-content: space-between;
+                    align-items: center;
+
+            }
+        }
+
+        & svg{
+            width: 24px;
+            height: 24px;
+            fill: none;
+            stroke: #1A1A1D;
+        }
+
+        & span{
+            font-family: Manrope;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 22px;
+            color: #1A1A1D;
+
+            @media (min-width: 768px) {
+                font-family: Manrope;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px; 
+            }
+        }
+    }
+}

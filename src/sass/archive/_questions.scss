@@ -1,0 +1,252 @@
+.questions{
+    // background-color: #FFF;
+
+    &>img {
+            display: block;
+            width: 100%;
+            height: 640px;
+            object-fit: cover;
+
+            @media (min-width: 768px) {
+                height: auto;
+                margin: auto;
+            }
+        }
+
+    & h2{
+        font-family: Roboto Condensed;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.96px;
+        text-transform: uppercase;
+        color: #1A1A1D;
+
+        @media (min-width: 768px) {
+            font-family: Roboto Condensed;
+            font-size: 96px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 81px; /* 84.375% */
+            letter-spacing: -2.88px;
+            text-transform: uppercase;
+        }
+    }
+
+    & >.container{
+        margin-top: 40px;
+
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            position: relative;
+            margin-top: 160px;
+        }
+        
+        & >button {
+            display: flex;
+            height: 40px;
+            padding: 0px 16px;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            border-radius: 200px;
+            background-color: #2A3489;
+            border: 1.4px solid #2A3489;
+            margin-top: 40px;
+
+            @media (min-width: 768px) {
+                width: fit-content;
+                height: 48px;
+                position: absolute;
+                margin: 0;
+                left: 72px;
+                top: 408px;
+                transform: translateY(-50%);
+
+                transition-property: background-color;
+                transition-duration: 500ms;
+                transition-delay: 0;
+
+                &:hover{
+                    background-color: #FFF;
+
+                    & > svg{
+                        stroke: #2A3489;
+                    }
+
+                    & > span{
+                        color: #2A3489;
+                    }
+                }
+            }
+    
+            &>svg {
+                width: 16px;
+                height: 16px;
+                stroke: #FFF;
+
+
+                
+            }
+    
+            &>span {
+                font-family: Manrope;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 16px;
+                color: #FFF;
+
+                @media (min-width: 768px) {
+                    font-family: Manrope;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 22px;
+
+                    // transition-property: color;
+                    // transition-duration: 500ms;
+                    // transition-delay: 0;
+                }
+            }
+        }
+
+        & > ul{
+            margin-top: 80px;
+
+            @media (min-width: 768px) {
+                margin-top: 0;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+
+            & > li{
+                padding-bottom: 16px;
+                border-bottom: 1px solid #1A1A1D;
+
+                @media (min-width: 768px) {
+                    cursor: pointer;
+                    display: grid;
+                    grid-template-columns: 40px 100%;
+                    gap: 0 24px;
+
+                    &:hover{
+                        & > h3{
+                            margin-left: 24px;
+                        }
+                    }
+                }
+
+                &.active{
+
+                    & > span{
+                        background-color: #1A1A1D;
+                        color: #F6F6F3;
+                    }
+
+                    & > p{
+                        margin-top: 16px;
+                        // height: fit-content;
+                    }
+
+                    & > h3{
+                        @media (min-width: 768px) {
+                            margin-left: 24px;
+                        }
+                    }
+                }
+
+                &:not(:first-child){
+                    margin-top: 16px;
+                }
+
+                & > span{
+                    font-family: Manrope;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 16px;
+                    color: #1A1A1D;
+                    text-align: center;
+                    height: 17px;
+                    padding: 0px 16px;
+                    border-radius: 200px;
+                    border: 1px solid #1A1A1D;
+                    background-color: transparent;
+                    max-width: 40px;
+                    display: flex;
+                    justify-content: center;
+
+                    transition-property: background-color, color;
+                    transition-duration: 500ms;
+                    transition-delay: 0;
+
+                    @media (min-width: 768px) {
+                        margin-top: 4px;
+                    }
+
+                }
+
+                & > h3{
+                    font-family: Roboto Condensed;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 16px;
+                    letter-spacing: -0.48px;
+                    text-transform: uppercase;
+                    color: #1A1A1D;
+                    margin-top: 16px;
+
+                    @media (min-width: 768px) {
+                        font-family: Roboto Condensed;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 28px; /* 116.667% */
+                        letter-spacing: -0.72px;
+                        text-transform: uppercase;
+                        margin-top: 0;
+                        max-width: 480px;
+
+                        transition-property: margin-left;
+                        transition-duration: 500ms;
+                        transition-delay: 0;
+                    }
+                }
+
+                & > p{
+                    font-family: Manrope;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 16px;
+                    color: #1A1A1D;
+                    margin-top: 0;
+                    height: 0px;
+                    overflow: hidden;
+
+                    transition-property: margin-top, height;
+                    transition-duration: 500ms;
+                    transition-delay: 0;
+
+                    @media (min-width: 768px) {
+                        grid-column-start: 2;
+                        grid-column-end: 3;
+                        padding-right: 72px;
+                        margin-left: 24px;
+                        font-family: Manrope;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

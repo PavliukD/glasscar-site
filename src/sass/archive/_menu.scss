@@ -1,0 +1,255 @@
+.menu{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+
+    transition-property: height, padding-top;
+    transition-duration: 500ms;
+    transition-delay: 0;
+
+    display: flex;
+    align-items: end;
+    z-index: 1;
+
+    @media (min-width: 768px) {
+        background-color: #2A3489;
+    }
+
+    &.hidden{
+        height: 0;
+        padding: 0;
+    }
+
+    & >.container{
+        padding-bottom: 12px;
+
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            padding-bottom: 0;
+            height: fit-content;
+            margin-bottom: 0;
+            margin-top: auto;
+            padding-bottom: 40px;
+        }
+
+        &>nav {
+
+            &>ul {
+
+                @media (min-width: 768px) {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 12px;
+                }
+
+                &>li {
+
+                    @media (min-width: 768px) {
+                        &:hover{
+                            & > a{
+                            opacity: 1;
+                            margin-left: 24px;
+                            
+                            &>svg{
+                                opacity: 1;
+                            }
+                        }
+                        }
+                    }
+
+                    @media (min-width: 768px) {
+                        grid-column-start: 1;
+                        grid-column-end: 2;
+
+
+                        &.menu-calculator{
+                            grid-column-start: 2;
+                            grid-column-end: 3;
+                            // margin: 0;
+                            margin: auto;
+                        }
+                    }
+
+                    &:not(:first-child){
+                        margin-top: 12px;
+
+                        @media (min-width: 768px) {
+                            margin-top: 0;
+                        }
+                    }
+
+                    &>a {
+    
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        opacity: 0.4;
+                        gap: 32px;
+                        transition-property: opacity, margin-left;
+                        transition-duration: 500ms;
+                        transition-delay: 0;
+
+                        @media (min-width: 768px) {
+                            // justify-content: flex-start;
+                        }
+    
+                        & span {
+                            font-family: Roboto Condensed;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 24px;
+                            letter-spacing: -0.72px;
+                            text-transform: uppercase;
+                            color: #FFFFFF;
+
+                            @media (min-width: 768px) {
+                                font-family: Roboto Condensed;
+                                font-size: 40px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 40px;
+                                letter-spacing: -1.2px;
+                                text-transform: uppercase;
+                            }
+                        }
+    
+                        & svg {
+                            width: 24px;
+                            height: 24px;
+                            stroke: #FFF;
+
+                            @media (min-width: 768px) {
+                                width: 32px;
+                                height: 32px;
+                                opacity: 0;
+                                transition-duration: 500ms;
+                                transition-property: opacity;
+                                transition-delay: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        & p{
+            display: none;
+
+            @media (min-width: 768px) {
+                display: block;
+                font-family: Manrope;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                color: #FFF;
+                max-width: 330px;
+                margin-left: auto;
+
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+        }
+    }
+}
+
+.menu-sertificats{
+    opacity: 0.4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px;
+
+    @media (min-width: 768px) {
+        opacity: 1;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    & > span{
+        font-family: Manrope;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        color: #FFFFFF;
+
+        @media (min-width: 768px) {
+            font-family: Manrope;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 22px;
+        }
+    }
+
+    & > svg{
+        width: 16px;
+        height: 16px;
+
+        @media (min-width: 768px) {
+            display: none;
+        }
+
+    }
+}
+
+.menu-buttons{
+    width: 100%;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+
+    & button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border-radius: 200px;
+        border: 1.4px solid #FFF;
+        height: 40px;
+        font-family: Manrope;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 16px;
+
+        &.menu-install{
+            background-color: #FFF;
+            color: #1A1A1D;
+        }
+
+        &.menu-repair{
+            background-color: transparent;
+            color: #FFF;
+        }
+    }
+}
+
+.menu-image{
+    display: none;
+
+    @media (min-width: 768px) {
+        display: block;
+        position: absolute;
+        left: 43%;
+        bottom: 0;
+        width: 42%;
+        // padding-bottom: 14%;
+    }
+}

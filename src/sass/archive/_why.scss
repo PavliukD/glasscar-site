@@ -1,0 +1,207 @@
+.why{
+    margin-top: 40px;
+
+    @media (min-width: 768px) {
+        width: 100%;
+
+        margin: auto;
+        margin-top: 100px;
+        
+        
+
+        & > img{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+
+    & > .container{
+        
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: start;
+            padding-top: 0;
+            position: relative;
+        }
+    }
+}
+
+.why--image{
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    height: 640px;
+    
+    @media (min-width: 768px) {
+        margin-bottom: 160px;
+        height: auto;
+    }
+}
+
+.why--title-wrap{
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @media (min-width: 768px) {
+        width: 78%;
+        height: fit-content;
+        position: sticky;
+        top: 40px;
+        padding: 0;
+    }
+
+    &.container{
+        @media (min-width: 768px) {
+            padding: 0;
+            margin-top: 0;
+        }
+    }
+
+    & h2{
+        font-family: Roboto Condensed;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.96px;
+        text-transform: uppercase;
+        color: #1A1A1D;
+
+        @media (min-width: 768px) {
+            font-family: Roboto Condensed;
+            font-size: 96px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 81px; /* 84.375% */
+            letter-spacing: -2.88px;
+            text-transform: uppercase;
+            
+        }
+    }
+
+    & p{
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        color: #1A1A1D;
+        margin-top: 40px;
+
+        @media (min-width: 768px) {
+            font-family: Manrope;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            width: 67%;
+            margin-top: 80px;
+        }
+    }
+}
+
+.why--list{
+    width: 100%;
+
+    @media (min-width: 768px) {
+        height: 100%;
+    }
+
+
+
+    & li{
+        background-color: #FFF;
+        padding: 24px;
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        @media (min-width: 768px) {
+            max-width: 636px;
+            padding: 40px;
+            margin-left: auto;
+        }
+
+        &:not(:first-child){
+            margin-top: 24px;
+        }
+
+        &:nth-child(2n){
+            & h3,
+            & p {
+                color: #FFF;
+            }
+        }
+
+
+        &.bg-1,
+        &.bg-2{
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            & h3,
+            & p{
+                color: #FFF;
+            }
+        }
+
+        & svg {
+            display: block;
+            width: 32px;
+            height: 32px;
+            fill: transparent;
+            stroke: #1A1A1D;
+
+            @media (min-width: 768px) {
+                width: 48px;
+                height: 48px;
+            }
+        }
+
+        & h3 {
+            font-family: Roboto Condensed;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: -0.96px;
+            text-transform: uppercase;
+            color: #1A1A1D;
+            margin-top: 78px;
+
+            @media (min-width: 768px) {
+                font-family: Roboto Condensed;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 48px;
+                letter-spacing: -1.44px;
+                text-transform: uppercase;
+                margin-top: 80px;
+            }
+        }
+
+        & p{
+            font-family: Manrope;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+            color: #1A1A1D;
+            height: 66px;
+            margin-top: 24px;
+
+            @media (min-width: 768px) {
+                font-family: Manrope;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+    }
+}
