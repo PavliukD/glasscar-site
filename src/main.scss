@@ -9,7 +9,7 @@ html {
 
 body {
     margin: 0;
-    background-color: #F6F6F3;
+    // background-color: #F6F6F3;
     
 }
 
@@ -66,3 +66,5 @@ a {
 @import './partials/section-questions/questions';
 @import './partials/seo/seo';
 @import './partials/map/map';
+@import './partials/popup/popup';
+@import './partials/footer/footer';

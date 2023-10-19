@@ -69,20 +69,20 @@
 
 .header--main{
 
-
     &>.container{
         display: flex;
+        align-items: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
 }
 
-.header-logo{
-    display: block;
-    width: 199px;
-    height: 32px;
-}
-
-.header-search{
-    display: none;
+.header--logo{
+    & svg{
+        display: block;
+        width: 199px;
+        height: 32px;
+    }
 }
 
 .header--language-switch {
@@ -125,6 +125,197 @@
             background-color: #FFF;
             color: #2A3489;
             opacity: 1;
+        }
+    }
+}
+
+.header--menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    border-radius: 100%;
+    background-color: #FFF;
+
+    @media (min-width: 768px) {
+        display: none;
+        // height: 48px;
+        // width: fit-content;
+        // padding: 0 24px;
+        // border-radius: 200px;
+        // border: 1.4px solid #FFF;
+        // background-color: transparent;
+        // margin-right: auto;
+
+        // transition-property: background-color;
+        // transition-duration: 500ms;
+        // transition-delay: 0;
+
+        // &:hover {
+        //     background-color: #FFF;
+
+        //     &>span {
+        //         color: #2A3489;
+        //     }
+        // }
+    }
+
+    &>.hidden {
+        display: none;
+    }
+
+    &>svg {
+        display: block;
+        width: 24px;
+        height: 24px;
+
+        @media (min-width: 768px) {
+            display: none;
+        }
+
+        &.cross {
+            stroke: black;
+        }
+
+    }
+}
+
+.header--desctop-linksset {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: flex;
+        gap: 4px;
+
+
+        & button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            border-radius: 200px;
+            border: 1.4px solid #FFF;
+            height: 40px;
+            font-family: Manrope;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 16px;
+            padding: 0 16px;
+            transition-property: color, background-color;
+            transition-duration: 500ms;
+            transition-delay: 0;
+
+            &.menu-install {
+                background-color: #FFF;
+                color: #2A3489;
+
+                &:hover {
+                    background-color: transparent;
+                    color: #FFF;
+                }
+            }
+
+            &.menu-repair {
+                background-color: transparent;
+                color: #FFF;
+
+                &:hover {
+                    background-color: #FFF;
+                    color: #2A3489;
+                }
+            }
+        }
+    }
+}
+
+.header--menu-button-text {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: inline-block;
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+        color: #FFF;
+
+        transition-property: color;
+        transition-duration: 500ms;
+        transition-delay: 0;
+    }
+}
+
+.header--call-button{
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.header--nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &>a{
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        color: #FFF;
+        opacity: 1;
+
+        transition-property: opacity;
+        transition-duration: 500ms;
+        transition-delay: 0;
+
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+
+    &>button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+        gap: 4px;
+        opacity: 1;
+        
+        transition-property: opacity;
+        transition-duration: 500ms;
+        transition-delay: 0;
+
+        &:hover {
+            opacity: 0.5;
+        }
+
+        &>span{
+            font-family: Manrope;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            color: #FFF;
+        }
+
+        &>svg{
+            display: block;
+            width: 16px;
+            height: 16px;
+            fill: none;
+            stroke: #FFF;
         }
     }
 }

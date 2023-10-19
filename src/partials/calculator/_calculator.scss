@@ -1,6 +1,8 @@
+@import '../../sass/container';
+
 .calculator{
     display: block;
-    padding-top: 80px;
+    padding-top: 140px;
     padding-bottom: 80px;
     background-color: #FFF;
 
@@ -579,7 +581,8 @@
 
     @media (min-width: 768px) {
         margin-top: 32px;
-        max-height: 560px;
+        max-height: 373px;
+        overflow: scroll;
         
     }
 
@@ -873,7 +876,8 @@
 
             &.services{
                 grid-template-columns: repeat(2, 1fr);
-
+                padding: 0;
+                margin-top: 32px;
             }
         }
 
@@ -929,6 +933,38 @@
                 background-color: #2A3489;
             }
         }
+    }
+}
+
+.calculator--title{
+    @extend .container;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 80px;
+
+    &>h2{
+        font-family: Roboto Condensed;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+        /* 100% */
+        letter-spacing: -1.44px;
+        text-transform: uppercase;
+        color: #1A1A1D;
+    }
+
+    & p{
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        color: #1A1A1D;
+        opacity: 1;
+        margin-top: 0;
     }
 }
 

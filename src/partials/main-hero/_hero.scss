@@ -1,7 +1,7 @@
 @import '../../sass/container';
 
 .hero{
-    padding-top: 150px;
+    padding-top: 250px;
     background-color: #2A3489;
 
     & > .container{
@@ -71,6 +71,11 @@
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 1;
+
+    transition-property: opacity;
+    transition-duration: 500ms;
+    transition-delay: 0;
 
     @media (min-width: 768px) {
         display: grid;
@@ -126,14 +131,18 @@
     & > p{
         @media (min-width: 768px) {
             max-width: 416px;
-            margin-left: auto;
+            margin-left: 21%;
+            max-height: 72px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            whitespace: nowrap;
         }
     }
 
     & >ul{
         justify-self: right;
         width: 100%;
-        max-width: 454px;
+        max-width: 450px;
 
         &>li{
             display: flex;
@@ -256,7 +265,7 @@
 
     @media (min-width: 768px) {
         justify-content: flex-end;
-        gap: 142px;
+        gap: 160px;
         position: absolute;
         bottom: 0;
         right: 82px;
