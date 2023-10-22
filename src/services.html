@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ua">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,24 +13,19 @@
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&family=Roboto+Condensed:wght@700&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <include src="./partials/header/header.html" locals='{
-        "class": ""
+        "class": "modified"
     }'></include>
-    <include src="./partials/main-hero/hero.html"></include>
-    <include src="./partials/services/main-page.html">
-        {
-            "class": "main"
-        }
-    </include>
-    <include src="./partials/calculator/calculator.html"></include>
-    <include src="./partials/section-about/section-about.html"></include>
-    <include src="./partials/section-why/why.html"></include>
-    <include src="./partials/section-segment/segment.html"></include>
-    <include src="./partials/section-steps/steps.html"></include>
-    <include src="./partials/section-reviews/reviews.html"></include>
+    <include src="./partials/page-hero/page-hero.html" locals='{
+        "image": "./images/hero/services.png",
+        "crumbs": "Послуги",
+        "title": "Послуги"
+    }'></include>
+    <include src="./partials/services/services.html"></include>
+    <include src="./partials/jobs/jobs.html"></include>
     <include src="./partials/section-blog/section-blog.html"></include>
-    <include src="./partials/section-questions/questions.html"></include>
     <include src="./partials/seo/seo.html"></include>
     <include src="./partials/map/map.html"></include>
     <include src="./partials/footer/footer.html"></include>
@@ -42,4 +38,5 @@
     <include src="./partials/menu-about/menu-about.html"></include>
     <include src="./partials/menu-catalog/menu-catalog.html"></include>
 </body>
+
 </html>

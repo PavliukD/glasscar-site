@@ -4,6 +4,12 @@
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
+
+    &.modified{
+        &>.header-info{
+            background-color: #1A1A1D;
+        }
+    }
 }
 
 

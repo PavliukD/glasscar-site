@@ -1,6 +1,7 @@
 import style from './main.scss'
 import html from './index.html'
 
+
 import Brands from './js/brand'
 import Steps from './js/steps'
 import Questions from './js/questions'
@@ -26,6 +27,7 @@ import Backdrop from './js/backdrop'
 import StepsHover from './js/stepsHover'
 import JobsCards from './js/jobsCards'
 import JobsPagination from './js/jobsPagination'
+import Header from './partials/header/header'
 
 
 Brands()
@@ -34,22 +36,24 @@ Questions()
 Seo()
 // Menu()
 Options()
-// MoreOptions()
+MoreOptions()
 DropMenu()
 HorisontalScroll()
 ScrollWhy()
 Hero()
 Language()
 CalculatorPagination()
-// Repair()
-// Install()
-// Request()
-// Info()
+Repair()
+Install()
+Request()
+Info()
 Main()
 Manufacturer()
 CalculatorSlider()
 calculatorLists()
-// Backdrop()
+Backdrop()
 StepsHover()
 JobsCards()
 JobsPagination()
+Header()
+
