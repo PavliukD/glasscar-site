@@ -18,32 +18,20 @@
     <include src="./partials/header/header.html" locals='{
         "class": "modified"
     }'></include>
-    <include src="./partials/page-hero/page-hero-2.html" locals='{
-            "image": "./images/hero/repair.png",
-            "first": "Послуги",
-            "second": "Ремонт автоскла",
-            "title": "РЕМОНТ АВТОСКЛА"
+    <include src="./partials/page-hero/page-hero.html" locals='{
+            "image": "./images/hero/about-us.png",
+            "first": "Про нас",
+            "title": "Про нас"
         }'></include>
-    <include src="./partials/blocks/text-content.html" locals='{
-        "title": "Про послуги",
+    <include src="./partials/blocks/text-content-order.html" locals='{
+        "title": "Про Glasscar",
         "first": "Ви отримали пошкодження автомобільного скла на дорозі, коли з-під коліс сусідньої машини вилетів камінь або тверді частинки грунту? Такий скол без тріщин легко ремонтується і не вимагає заміни скла. Памятайте, дрібні пошкодження в майбутньому збільшуються до тріщин, і тоді автомобільне скло точно доведеться міняти — заміна вийде вам в 10 разів дорожче.",
         "second": "У компанії Carglass® - унікальні технології і інноваційне обладнання. Ремонт автомобільного скла проводимо із застосуванням спеціальних високоміцних фірмових полімерів. Склади на полімерній основі мають однаковий коефіцієнт заломлення зі склом. Це виключає спотворення зображення. Зона ремонту ретельно полірується, так що залишається непомітною. Структурна міцність скла відновлюється на 100%, а значить керувати автомобілем буде безпечно."
     }'></include>
-    <include src="./partials/blocks/list.html">
-        {
-            "title": "ВАРТІСТЬ"
-        }
-    </include>
-    <include src="./partials/jobs/jobs.html"></include>
+    <include src="./partials/section-about/section-about.html"></include>
     <include src="./partials/section-why/why.html">
         {
-            "type": "modified"
-        }
-    </include>
-    <include src="./partials/order/order.html"></include>
-    <include src="./partials/section-reviews/reviews.html">
-        {
-            "type": "modified"
+        "type": ""
         }
     </include>
     <include src="./partials/section-segment/segment.html">
@@ -51,8 +39,14 @@
         "type": "modified"
         }
     </include>
+    <include src="./partials/section-reviews/reviews.html">
+        {
+        "type": "modified"
+        }
+    </include>
     <include src="./partials/section-blog/section-blog.html"></include>
     <include src="./partials/section-questions/questions.html"></include>
+    <include src="./partials/section-consultation/section-consultation.html"></include>
     <include src="./partials/seo/seo.html"></include>
     <include src="./partials/map/map.html"></include>
     <include src="./partials/footer/footer.html"></include>
