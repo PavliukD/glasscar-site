@@ -44,15 +44,10 @@
         }
 
         &:first-child{
-            &:hover{
-                &>a{
-                    margin-right: 2px;
-                    margin-left: 6px;
-                }
-            }
+            
         }
 
-        &:not(:first-child){
+        &:last-child{
             opacity: 0.4;
         }
 
@@ -64,6 +59,13 @@
                 height: 16px;
                 display: block;
                 stroke: #fff;
+            }
+
+            &:hover {
+                &>a {
+                    margin-right: 2px;
+                    margin-left: 6px;
+                }
             }
         }
     }

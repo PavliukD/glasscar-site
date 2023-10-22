@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Glass</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&family=Roboto+Condensed:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <include src="./partials/header/header.html" locals='{
+        "class": "modified"
+    }'></include>
+    <include src="./partials/page-hero/page-hero-2.html" locals='{
+            "image": "./images/hero/repair.png",
+            "first": "Послуги",
+            "second": "Ремонт автоскла",
+            "title": "РЕМОНТ АВТОСКЛА"
+        }'></include>
+    <include src="./partials/blocks/text-content.html" locals='{
+        "title": "Про послуги",
+        "first": "Ви отримали пошкодження автомобільного скла на дорозі, коли з-під коліс сусідньої машини вилетів камінь або тверді частинки грунту? Такий скол без тріщин легко ремонтується і не вимагає заміни скла. Памятайте, дрібні пошкодження в майбутньому збільшуються до тріщин, і тоді автомобільне скло точно доведеться міняти — заміна вийде вам в 10 разів дорожче.",
+        "second": "У компанії Carglass® - унікальні технології і інноваційне обладнання. Ремонт автомобільного скла проводимо із застосуванням спеціальних високоміцних фірмових полімерів. Склади на полімерній основі мають однаковий коефіцієнт заломлення зі склом. Це виключає спотворення зображення. Зона ремонту ретельно полірується, так що залишається непомітною. Структурна міцність скла відновлюється на 100%, а значить керувати автомобілем буде безпечно."
+    }'></include>
+    <include src="./partials/blocks/list.html">
+        {
+            "title": "ВАРТІСТЬ"
+        }
+    </include>
+    <include src="./partials/jobs/jobs.html"></include>
+    <include src="./partials/section-why/why.html">
+        {
+            "type": "modified"
+        }
+    </include>
+    
+    <include src="./partials/section-reviews/reviews.html">
+        {
+            "type": "modified"
+        }
+    </include>
+    <include src="./partials/section-segment/segment.html">
+        {
+        "type": "modified"
+        }
+    </include>
+    <include src="./partials/section-blog/section-blog.html"></include>
+    <include src="./partials/section-questions/questions.html"></include>
+    <include src="./partials/seo/seo.html"></include>
+    <include src="./partials/map/map.html"></include>
+    <include src="./partials/footer/footer.html"></include>
+    <include src="./partials/popup/info-popup.html"></include>
+    <include src="./partials/popup/install-popup.html"></include>
+    <include src="./partials/popup/repair-popup.html"></include>
+    <include src="./partials/popup/request-popup.html"></include>
+    <include src="./partials/popup/thnx-1.html"></include>
+    <include src="./partials/popup/thnx-2.html"></include>
+    <include src="./partials/menu-about/menu-about.html"></include>
+    <include src="./partials/menu-catalog/menu-catalog.html"></include>
+</body>
+
+</html>

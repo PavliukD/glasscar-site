@@ -8,6 +8,13 @@
         // padding-bottom: 160px;
     }
 
+    &.modified{
+        padding-bottom: 160px;
+        &>img{
+            display: none;
+        }
+    }
+
     &>img {
         display: block;
         width: 100%;

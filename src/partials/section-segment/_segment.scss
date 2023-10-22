@@ -4,7 +4,9 @@
     padding-bottom: 80px;
     margin-top: 80px;
 
-    
+    &.modified{
+        margin-top: 0;
+    }
 
     & > .container{
         @media (min-width: 768px) {
