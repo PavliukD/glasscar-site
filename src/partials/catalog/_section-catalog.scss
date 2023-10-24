@@ -1,0 +1,178 @@
+@import '../../sass/container';
+
+.catalog{
+    @extend .container;
+    padding-top: 140px;
+
+    &>h2{
+        font-family: Roboto Condensed;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+        /* 100% */
+        letter-spacing: -1.44px;
+        text-transform: uppercase;
+        color: #1A1A1D;
+    }
+
+    
+}
+
+.catalog--filter{
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    margin-top: 40px;
+
+    margin-top: 40px;
+
+    &>li {
+        flex-shrink: 0;
+
+        &>a {
+            font-family: Roboto Condensed;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+            /* 100% */
+            letter-spacing: -0.96px;
+            text-transform: uppercase;
+            color: #1A1A1D;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            width: 56px;
+            background-color: #F6F6F3;
+
+            transition-property: color, background-color;
+            transition-duration: 500ms;
+            transition-delay: 0;
+
+            &:hover{
+                background-color: transparent;
+                color: #4958D1;
+            }
+        }
+    }
+}
+
+.catalog-cars{
+
+    margin-top: 40px;
+
+    &>li{
+        display: flex;
+        align-items: center;
+
+        &>span{
+
+            display: flex;
+            width: 8%;
+            height: 100%;
+            border: 1px solid #F6F6F3;
+            align-items: center;
+            justify-content: center;
+
+                font-family: Roboto Condensed;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 48px;
+                /* 100% */
+                letter-spacing: -1.44px;
+                text-transform: uppercase;
+                color: #1A1A1D;
+
+            // &>span {
+            //     font-family: Roboto Condensed;
+            //     font-size: 48px;
+            //     font-style: normal;
+            //     font-weight: 700;
+            //     line-height: 48px;
+            //     /* 100% */
+            //     letter-spacing: -1.44px;
+            //     text-transform: uppercase;
+            //     color: #1A1A1D;
+                
+            // }
+        }
+
+        &>ul{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            width: 90.75%;
+
+            &>li{
+                display: block;
+                position: relative;
+                width: 100%;
+
+                &>a{
+                    display: block;
+                    width: 100%;
+                    padding-top: 50%;
+                    padding-bottom: 50%;
+                    border: 1px solid #F6F6F3;
+
+                    transition-property: background-color;
+                    transition-duration: 500ms;
+                    transition-delay: 0;
+
+                    &:hover{
+                        background-color: #4958D1;
+
+                        & svg{
+                            fill: #FFF;
+                        }
+
+                        & span{
+                            color: #FFF;
+                        }
+                    }
+
+                    &>div{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 16px;
+                    }
+
+
+                    & svg{
+                        display: block;
+                        width: 80px;
+                        height: 80px;
+                        fill: rgba(26, 26, 29, 0.40);
+
+                        transition-property: fill;
+                        transition-duration: 500ms;
+                        transition-delay: 0;
+
+                    }
+
+                    & span{
+                        font-family: Manrope;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 16px;
+                        color: rgba(26, 26, 29, 0.40);
+
+                        transition-property: color;
+                        transition-duration: 500ms;
+                        transition-delay: 0;
+                    }
+                }
+            }
+        }
+    }
+}

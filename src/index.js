@@ -28,6 +28,7 @@ import StepsHover from './js/stepsHover'
 import JobsCards from './js/jobsCards'
 import JobsPagination from './js/jobsPagination'
 import Header from './partials/header/header'
+import SectionCatalog from './partials/catalog/sectionCatalog'
 
 
 Brands()
@@ -56,4 +57,5 @@ StepsHover()
 JobsCards()
 JobsPagination()
 Header()
+SectionCatalog()
 
