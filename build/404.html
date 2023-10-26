@@ -13,15 +13,554 @@
 <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
 
 <body>
-    <!-- <include src="./partials/header.html"></include>
-    <include src="./partials/page-404.html"></include>
-    <include src="./partials/menu.html"></include>
-    <include src="./partials/request-popup.html"></include>
-    <include src="./partials/repair-popup.html"></include>
-    <include src="./partials/install-popup.html"></include>
-    <include src="./partials/info-popup.html"></include>
-    <include src="./partials/thnx-1.html"></include>
-    <include src="./partials/thnx-2.html"></include> -->
+    <header class="header {{class}}">
+    <div class="header-info">
+        <div class="container">
+            <a href="https://maps.app.goo.gl/yMiV6W8HFE1EpZYz7">
+                <svg>
+                    <use href="images/icons.svg#location"></use>
+                </svg>
+                <span>
+                    Україна, Київ, вул. Бориспільська 44
+                </span>
+            </a>
+            <div class="header-info-social">
+                <div>
+                    <a href="">
+                        <svg>
+                            <use href="images/icons.svg#telegram"></use>
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg>
+                            <use href="images/icons.svg#phone"></use>
+                        </svg>
+                    </a>
+                </div>
+                <a href="">+38 067 536 96 96</a>
+            </div>
+            <span>
+                <svg>
+                    <use href="images/icons.svg#clock"></use>
+                </svg>
+                Пн-Пт - 9:00-19:00 / Сб - Нд - Вихідні
+            </span>
+        </div>
+    </div>
+    <div class="header--main">
+        <div class="container">
+            <div class="header--logo">
+                <svg>
+                    <use href="images/icons.svg#logo"></use>
+                </svg>
+            </div>
+            <div class="header--language-switch">
+                <a class="active">ua</a>
+                <a>ru</a>
+            </div>
+            <nav class="header--nav">
+                <a href="/">Головна</a>
+                <a href="./services.html">Послуги</a>
+                <a href="./price.html">Ціни</a>
+                <button class="salary">
+                    <span>Продаж автоскла</span>
+                    <svg>
+                        <use href="images/icons.svg#arrow-down"></use>
+                    </svg>
+                </button>
+                <button class="about-btn">
+                    <span>Про нас</span>
+                    <svg>
+                        <use href="images/icons.svg#arrow-down"></use>
+                    </svg>
+                </button>
+                <a href="./blog.html">Блог</a>
+                <a href="">Контакти</a>
+            </nav>
+            <button class="header--call-button">
+                <svg>
+                    <use href="images/icons.svg#phone"></use>
+                </svg>
+            </button>
+            <button class="header--menu-button">
+                <span class="header--menu-button-text">Меню</span>
+                <span class="header--menu-button-text hidden">Закрити</span>
+                <svg class="header--menu-button-icon">
+                    <use href="images/icons.svg#menu"></use>
+                </svg>
+                <svg class="header--menu-button-icon cross hidden">
+                    <use href="images/icons.svg#cross-2"></use>
+                </svg>
+            </button>
+            <div class="header--desctop-linksset">
+                <button class="menu-install" data-install="">Встановлення автоскла</button>
+                <button class="menu-repair" data-repair="">Ремонт автоскла</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div class="page-error">
+    <div class="container">
+        <span>Error</span>
+        <h2>Упс…<br>Ми не можемо
+            знайти саме те, що Ви шукаєте</h2>
+        <a href="">
+            <svg>
+                <use href="images/icons.svg#arrow-left"></use>
+            </svg>
+            <span>На головну</span>
+        </a>
+    </div>
+</div>
+    <div class="menu hidden">
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">
+                        <span>Головна</span>
+                        <svg>
+                            <use href="images/icons.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu-calculator">
+                    <a href="./services.html">
+                        <span>Послуги</span>
+                        <svg>
+                            <use href="images/icons.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="./price.html">
+                        <span>Ціни</span>
+                        <svg>
+                            <use href="images/icons.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="sell-glass">
+                    <button href="">
+                        <span>Продаж автоскла</span>
+                        <svg>
+                            <use href="images/icons.svg#arrow-right"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="about-us">
+                    <button href="">
+                        <span>Про нас</span>
+                        <svg>
+                            <use href="images/icons.svg#arrow-right"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <a href="./blog.html">
+                        <span>Блог</span>
+                        <svg>
+                            <use href="images/icons.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="./contacts.html">
+                        <span>Контакти</span>
+                        <svg>
+                            <use href="images/icons.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <p>
+            Ми зробили цей калькулятор з метою надати вам можливість самостійно розрахувати вартість встановлення або ремонту
+            автомобільного скла.
+        </p>
+        <img src="images/menu-img.png" alt="" class="menu-image">
+        <div class="menu-buttons">
+            <button class="menu-install" data-install="">Встановлення автоскла</button>
+            <button class="menu-repair" data-repair="">Ремонт автоскла</button>
+        </div>
+    </div>
+</div>
+    <div class="popup request hidden">
+    <div class="popup--title">
+        <span>Запит</span>
+        <button>
+            <svg>
+                <use href="images/icons.svg#cross-2"></use>
+            </svg>
+        </button>
+    </div>
+    <form action="">
+        <input type="text" placeholder="Марка автомобіля" class="popup-marck">
+        <input type="text" placeholder="Рік">
+        <input type="text" placeholder="Модель">
+        <input type="text" placeholder="Номер телефону">
+        <input type="text" placeholder="Імʼя" class="install--name">
+        <input type="text" placeholder="Додаткова інформація" class="popup-more-information">
+    </form>
+    <button class="call">
+        <span>Передзвонити</span>
+        <svg>
+            <use href="images/icons.svg#arrow-right"></use>
+        </svg>
+    </button>
+    <span class="popup-or">або</span>
+    <div class="popup-contacts">
+        <button>
+            <span>Viber</span>
+            <svg>
+                <use href="images/icons.svg#arrow-right"></use>
+            </svg>
+        </button>
+        <button>
+            <span>Telegram</span>
+            <svg>
+                <use href="images/icons.svg#arrow-right"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+
+    <div class="popup repair hidden">
+    <div class="popup--title">
+        <span>Ремонт автоскла</span>
+        <button>
+            <svg>
+                <use href="images/icons.svg#cross-2"></use>
+            </svg>
+        </button>
+    </div>
+    <form action="">
+        <input type="text" placeholder="Марка автомобіля">
+        <input type="text" placeholder="Модель">
+        <input type="text" placeholder="Номер телефону">
+        <input type="text" placeholder="Імʼя" class="install--name">
+    </form>
+    <div class="popup-options">
+        <div class="option">
+            <div class="option-title-wrap">
+                <button class="option-button">
+                    <svg>
+                        <use href="images/icons.svg#cross-1"></use>
+                    </svg>
+                    <svg class="hidden">
+                        <use href="images/icons.svg#cross-2"></use>
+                    </svg>
+                </button>
+                <h3>Ремонт
+                    тріщін</h3>
+            </div>
+            <div class="option-details-wrap">
+                <div class="option-details">
+                    <p>Час встановлення:</p>
+                    <svg>
+                        <use href="images/icons.svg#pay-1"></use>
+                    </svg>
+                    <span>1,5-2 години</span>
+                </div>
+                <div class="option-details">
+                    <p>Вартість:</p>
+                    <svg>
+                        <use href="images/icons.svg#truck-3"></use>
+                    </svg>
+                    <span>800 ₴</span>
+                </div>
+            </div>
+        </div>
+        <div class="option">
+            <div class="option-title-wrap">
+                <button class="option-button">
+                    <svg>
+                        <use href="images/icons.svg#cross-1"></use>
+                    </svg>
+                    <svg class="hidden">
+                        <use href="images/icons.svg#cross-2"></use>
+                    </svg>
+                </button>
+                <h3>Ремонт
+                    сколів</h3>
+            </div>
+            <div class="option-details-wrap">
+                <div class="option-details">
+                    <p>Час встановлення:</p>
+                    <svg>
+                        <use href="images/icons.svg#pay-1"></use>
+                    </svg>
+                    <span>1,5-2 години</span>
+                </div>
+                <div class="option-details">
+                    <p>Вартість:</p>
+                    <svg>
+                        <use href="images/icons.svg#truck-3"></use>
+                    </svg>
+                    <span>800 ₴</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <p class="popup--notif">Працюємо інструментом Equаlizer, полімер CRYSTAL CLEAR США Glasscar® використовує інноваційне обладнання та сучасні
+    високоміцні полімери, що застосовуються в усьому світі.</p>
+    <button class="call">
+        <span>Передзвонити</span>
+        <svg>
+            <use href="images/icons.svg#arrow-right"></use>
+        </svg>
+    </button>
+    
+</div>
+    <div class="backdrop hidden">
+</div>
+<div class="backdrop-blue hidden">
+</div>
+<div class="popup install hidden">
+    <div class="popup--title">
+        <span>Встановлення автоскла</span>
+        <button>
+            <svg>
+                <use href="images/icons.svg#cross-2"></use>
+            </svg>
+        </button>
+    </div>
+    <div>
+        <form action="">
+            <input type="text" placeholder="Марка автомобіля">
+            <input type="text" placeholder="Модель">
+            <div class="input-wrap">
+                <input type="text" placeholder="Рік">
+                <input type="text" placeholder="Тип скла">
+            </div>
+            <input type="text" placeholder="Номер телефону">
+            <input type="text" placeholder="Імʼя" class="install--name">
+            <input type="text" placeholder="Додаткова інформація" class="popup-more-information">
+        </form>
+        <button class="more-options">
+            <span>Додаткові Послуги</span>
+            <span class="hidden">Сховати Послуги</span>
+            <svg>
+                <use href="images/icons.svg#arrow-down"></use>
+            </svg>
+            <svg class="hidden">
+                <use href="images/icons.svg#arrow-up"></use>
+            </svg>
+        </button>
+        <ul class="popup-otions-list hidden horizontal-scroller">
+            <li>
+                <div class="option">
+                    <div class="option-title-wrap">
+                        <button class="option-button">
+                            <svg>
+                                <use href="images/icons.svg#cross-1"></use>
+                            </svg>
+                            <svg class="hidden">
+                                <use href="images/icons.svg#cross-2"></use>
+                            </svg>
+                        </button>
+                        <h3>Ремонт
+                            тріщін</h3>
+                    </div>
+                    <div class="option-details-wrap">
+                        <div class="option-details">
+                            <p>Час встановлення:</p>
+                            <svg>
+                                <use href="images/icons.svg#pay-1"></use>
+                            </svg>
+                            <span>1,5-2 години</span>
+                        </div>
+                        <div class="option-details">
+                            <p>Вартість:</p>
+                            <svg>
+                                <use href="images/icons.svg#truck-3"></use>
+                            </svg>
+                            <span>800 ₴</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="option">
+                    <div class="option-title-wrap">
+                        <button class="option-button">
+                            <svg>
+                                <use href="images/icons.svg#cross-1"></use>
+                            </svg>
+                            <svg class="hidden">
+                                <use href="images/icons.svg#cross-2"></use>
+                            </svg>
+                        </button>
+                        <h3>Ремонт
+                            тріщін</h3>
+                    </div>
+                    <div class="option-details-wrap">
+                        <div class="option-details">
+                            <p>Час встановлення:</p>
+                            <svg>
+                                <use href="images/icons.svg#pay-1"></use>
+                            </svg>
+                            <span>1,5-2 години</span>
+                        </div>
+                        <div class="option-details">
+                            <p>Вартість:</p>
+                            <svg>
+                                <use href="images/icons.svg#truck-3"></use>
+                            </svg>
+                            <span>800 ₴</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="option">
+                    <div class="option-title-wrap">
+                        <button class="option-button">
+                            <svg>
+                                <use href="images/icons.svg#cross-1"></use>
+                            </svg>
+                            <svg class="hidden">
+                                <use href="images/icons.svg#cross-2"></use>
+                            </svg>
+                        </button>
+                        <h3>Ремонт
+                            тріщін</h3>
+                    </div>
+                    <div class="option-details-wrap">
+                        <div class="option-details">
+                            <p>Час встановлення:</p>
+                            <svg>
+                                <use href="images/icons.svg#pay-1"></use>
+                            </svg>
+                            <span>1,5-2 години</span>
+                        </div>
+                        <div class="option-details">
+                            <p>Вартість:</p>
+                            <svg>
+                                <use href="images/icons.svg#truck-3"></use>
+                            </svg>
+                            <span>800 ₴</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="option">
+                    <div class="option-title-wrap">
+                        <button class="option-button">
+                            <svg>
+                                <use href="images/icons.svg#cross-1"></use>
+                            </svg>
+                            <svg class="hidden">
+                                <use href="images/icons.svg#cross-2"></use>
+                            </svg>
+                        </button>
+                        <h3>Ремонт
+                            тріщін</h3>
+                    </div>
+                    <div class="option-details-wrap">
+                        <div class="option-details">
+                            <p>Час встановлення:</p>
+                            <svg>
+                                <use href="images/icons.svg#pay-1"></use>
+                            </svg>
+                            <span>1,5-2 години</span>
+                        </div>
+                        <div class="option-details">
+                            <p>Вартість:</p>
+                            <svg>
+                                <use href="images/icons.svg#truck-3"></use>
+                            </svg>
+                            <span>800 ₴</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <button class="call">
+            <span>Передзвонити</span>
+            <svg>
+                <use href="images/icons.svg#arrow-right"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+    <div class="popup info hidden" data-popup="info">
+    <div class="popup--title">
+        <span>Технічні характеристики:</span>
+        <button>
+            <svg>
+                <use href="images/icons.svg#cross-2"></use>
+            </svg>
+        </button>
+    </div>
+    <ul class="popup-info-list">
+        <li>
+            <h4>Колір:</h4>
+            <span>Зелений</span>
+        </li>
+        <li>
+            <h4>Початок/кінець випуску:</h4>
+            <span>2020 - 2023</span>
+        </li>
+        <li>
+            <h4>Гарантія:</h4>
+            <span>спотворення – безстрокова, розшарування – 3 роки</span>
+        </li>
+        <li>
+            <h4>Колір лінії:</h4>
+            <span>Немає ліній</span>
+        </li>
+        <li>
+            <h4>Антивідблиск напилення:</h4>
+            <span>Ні</span>
+        </li>
+        <li>
+            <h4>Інкапсуляція:</h4>
+            <span>Ні</span>
+        </li>
+        <li>
+            <h4>Антена</h4>
+            <span>Ні</span>
+        </li>
+        <li>
+            <h4>Обігрів:</h4>
+            <span>Ні</span>
+        </li>
+        <li>
+            <h4>Датчик світла та дощу:</h4>
+            <span>Ні</span>
+        </li>
+        <li>
+            <h4>Вікно під VIN код:</h4>
+            <span>Ні</span>
+        </li>
+        <li>
+            <h4>Шумоізоляція:</h4>
+            <span>Ні</span>
+        </li>
+        <li>
+            <h4>Тепловідбивне:</h4>
+            <span>Ні</span>
+        </li>
+        <li>
+            <h4>Теплопоглинаюче:</h4>
+            <span>Ні</span>
+        </li>
+    </ul>
+</div>
+    <div class="thnx-popup hidden" data-thnx="unnamed">
+    <h2>Дякуємо!</h2>
+    <p>З повагою команда GLASSCAR.
+    Очикуйте на дзвінок ;)</p>
+</div>
+    <div class="thnx-popup hidden" data-thnx="named">
+    <h2>Дякуємо, <span class="thnx-popup--name">Артур!</span></h2>
+    <p>З повагою команда GLASSCAR.
+        Очикуйте на дзвінок ;)</p>
+</div>
 </body>
 
 </html>

@@ -4,6 +4,10 @@
     @extend .container;
     padding-top: 140px;
 
+    @media (max-width: 767px) {
+        padding-top: 80px;
+    }
+
     &>h2{
         font-family: Roboto Condensed;
         font-size: 48px;
@@ -14,6 +18,17 @@
         letter-spacing: -1.44px;
         text-transform: uppercase;
         color: #1A1A1D;
+
+        @media (max-width: 767px) {
+            font-family: Roboto Condensed;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 32px;
+                /* 100% */
+                letter-spacing: -0.96px;
+                text-transform: uppercase;
+        }
     }
 
     
@@ -25,7 +40,6 @@
     flex-wrap: wrap;
     flex-shrink: 0;
     margin-top: 40px;
-
     margin-top: 40px;
 
     &>li {
@@ -52,6 +66,18 @@
             transition-property: color, background-color;
             transition-duration: 500ms;
             transition-delay: 0;
+
+            @media (max-width:767px) {
+                font-family: Roboto Condensed;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 16px;
+                    /* 100% */
+                    letter-spacing: -0.48px;
+                    text-transform: uppercase;
+                    width: 32px;
+            }
 
             &:hover{
                 background-color: transparent;
@@ -88,6 +114,18 @@
                 text-transform: uppercase;
                 color: #1A1A1D;
 
+                @media (max-width: 767px) {
+                    font-family: Roboto Condensed;
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 32px;
+                        /* 100% */
+                        letter-spacing: -0.96px;
+                        text-transform: uppercase;
+                        width: 15%;
+                }
+
             // &>span {
             //     font-family: Roboto Condensed;
             //     font-size: 48px;
@@ -107,10 +145,21 @@
             grid-template-columns: repeat(6, 1fr);
             width: 90.75%;
 
+            @media (max-width: 767px) {
+                display: flex;
+                flex-wrap: wrap;
+                width: 80%;
+            }
+
             &>li{
                 display: block;
                 position: relative;
                 width: 100%;
+
+                @media (max-width: 767px) {
+                    width: 50%;
+                    max-width: 140px;
+                }
 
                 &>a{
                     display: block;

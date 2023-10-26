@@ -3,8 +3,9 @@
 .services{
     @extend .container;
     padding-top: 140px;
-    &.main{
-        
+
+    @media (max-width: 767px) {
+        padding-top: 80px;
     }
 }
 

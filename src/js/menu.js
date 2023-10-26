@@ -6,6 +6,8 @@ export default function Menu() {
     const header = document.querySelector('header')
     const nav = menu.querySelector('nav')
     const items = nav.querySelectorAll('li')
+    const catalogMenu = document.querySelector('.menu-catalog')
+    const aboutMenu = document.querySelector('.menu-about')
 
     button.addEventListener("click", () => {
         txt.forEach(text => text.classList.toggle('hidden'))
@@ -15,6 +17,10 @@ export default function Menu() {
         header.classList.toggle('on')
 
         items.forEach(item => {
+            if (item.classList.contains('sell-glass') || item.classList.contains('about-us')) {
+                return
+            }
+
             item.addEventListener('click', () => {
                 menu.classList.add('hidden')
                 header.classList.remove('on')
@@ -22,5 +28,14 @@ export default function Menu() {
                 txt.forEach(text => text.classList.toggle('hidden'))
             })
         })
+
+        if (header.classList.contains('on')) {
+            return
+        }
+
+        catalogMenu.classList.remove('open')
+        aboutMenu.classList.remove('open')
+        catalogMenu.style.height = '0px'
+        aboutMenu.style.height = '0px'
     })
 }

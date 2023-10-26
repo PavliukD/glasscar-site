@@ -3,11 +3,15 @@ footer{
     padding-bottom: 30px;
     padding-top: 80px;
     // margin-top: 40px;
+
+    @media (max-width: 767px) {
+        padding-top: 40px;
+    }
     
     
     & >.container{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        // grid-template-columns: repeat(2, 1fr);
         gap: 32px;
         position: relative;
 
@@ -175,7 +179,7 @@ footer{
         color: #FFF;
         margin: auto;
         display: inline-block;
-        margin-top: 80px;
+        margin-top: 40px;
 
         @media (min-width: 768px) {
             font-family: Roboto Condensed;
@@ -264,6 +268,13 @@ footer{
     grid-row-start: 1;
     grid-row-end: 2;
 
+    @media (max-width: 767px) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
     & li{
         display: flex;
         align-items: center;
@@ -335,6 +346,13 @@ footer{
     grid-row-start: 2;
     grid-row-end: 3;
 
+    @media (max-width: 768px) {
+    grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
     & svg{
         width: 37px;
         height: 24px;
@@ -352,8 +370,10 @@ footer{
     grid-column-start: 1;
     grid-column-end: 3;
     border-top: 1px solid rgba(255, 255, 255, 0.40);
+    display: none;
 
     @media (min-width: 768px) {
+        display: block;
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 2;
@@ -462,6 +482,11 @@ footer{
     max-width: 856px;
     gap: 24px;
     margin-left: auto;
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
 }
 
 .footer-nav-pages{
@@ -494,6 +519,13 @@ footer{
     display: flex;
     flex-direction: column;
 
+    @media (max-width: 768px) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
 }
 
 .footer-nav-adress{
@@ -501,6 +533,13 @@ footer{
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
+
+    @media (max-width: 767px) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
 
     display: flex;
     flex-direction: column;

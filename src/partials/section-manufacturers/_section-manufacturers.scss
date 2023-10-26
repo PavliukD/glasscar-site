@@ -5,10 +5,20 @@
     padding-top: 140px;
     padding-bottom: 60px;
 
+    @media (max-width767px) {
+        padding-top: 80px;
+
+    }
+
     &>ul{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 42px 25px;
+
+        @media (max-width: 767px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
 
         &>li{
 
@@ -21,6 +31,12 @@
                     object-fit: cover;
                     max-width: 306px;
                     max-height: 220px;
+
+                    @media (max-width: 767px) {
+                        max-height: none;
+                        max-width: none;
+                        height: auto;
+                    }
                 }
 
                 &>span{
@@ -32,6 +48,15 @@
                     color: #1A1A1D;
                     margin-top: 16px;
                     display: block;
+
+                    @media (max-width:767px) {
+                        font-family: Manrope;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 16px;
+                            margin-top: 8px;
+                    }
                 }
             }
         }

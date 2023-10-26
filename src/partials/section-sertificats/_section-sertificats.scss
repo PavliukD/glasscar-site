@@ -5,10 +5,20 @@
     padding-top: 140px;
     padding-bottom: 140px;
 
+    @media (max-width: 767px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
     &>ul{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
+
+        @media (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+        }
 
         &>li{
             height: 100%;
@@ -25,6 +35,11 @@
                 height: 100%;
                 width: auto;
                 object-fit: cover;
+
+                @media (max-width: 767px) {
+                    width: 100%;
+                    height: auto;
+                }
             }
 
             &>div{
@@ -39,6 +54,10 @@
                 top: 0;
                 left: 0;
                 z-index: 2;
+
+                @media (max-width: 767px) {
+                    opacity: 1;
+                }
 
                 transition-property: opacity;
                 transition-duration: 500ms;
