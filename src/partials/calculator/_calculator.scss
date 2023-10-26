@@ -937,7 +937,11 @@
 }
 
 .calculator--title{
-    @extend .container;
+    max-width: 1440px;
+    margin: auto;
+    width: 100%;
+    padding-left: 72px;
+    padding-right: 72px;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);

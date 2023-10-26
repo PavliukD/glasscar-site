@@ -1,7 +1,11 @@
 @import '../../sass/container';
 
 .consultation {
-    @extend .container;
+    max-width: 1440px;
+    width: 100%;
+    padding-left: 72px;
+    padding-right: 72px;
+    margin: auto;
     padding-left: 0;
     margin-bottom: 140px;
     display: grid;
@@ -76,14 +80,16 @@
         flex-direction: column;
         justify-content: space-between;
 
-        &>span {
-            font-family: Manrope;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 22px;
-            color: #1A1A1D;
-            opacity: 0.4;
+        &>div{
+            &>span {
+                    font-family: Manrope;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 22px;
+                    color: #1A1A1D;
+                    opacity: 0.4;
+                }
         }
 
         & h2 {
