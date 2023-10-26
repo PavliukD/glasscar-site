@@ -1,0 +1,18 @@
+@import '../section-about/section-about';
+
+.clients{
+    @extend .about;
+}
+
+.clients--list{
+    @extend .about--list;
+}
+
+.clients--list-item{
+    @extend .about--list-item;
+
+    & img{
+        max-height: 600px;
+        object-fit: cover;
+    }
+}

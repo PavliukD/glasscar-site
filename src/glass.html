@@ -18,19 +18,31 @@
     <include src="./partials/header/header.html" locals='{
         "class": "modified"
     }'></include>
-    <include src="./partials/page-hero/page-hero.html" locals='{
-            "image": "./images/hero/clients.png",
-            "first": "Про нас",
-            "title": "Корпоративним кліентам"
+    <include src="./partials/page-hero/page-hero-2.html" locals='{
+            "image": "./images/hero/glass.png",
+            "first": "Продаж автоскла",
+            "second": "Лобове скло - Київ",
+            "title": "Лобове скло  Київ"
         }'></include>
-    <include src="./partials/blocks/text-content-clients.html"></include>
-    <include src="./partials/clients/section-clients.html"></include>
-    <include src="./partials/jobs/jobs.html"></include>
-    <include src="./partials/section-segment/segment.html"></include>
-    <section src="./partials/section-reviews/reviews.html"></section>
+    <include src="./partials/blocks/text-content.html" locals='{
+        "title": "професійне рішення за доступною ціною",
+        "first": "Розвиток автомобільної галузі потребує надання високоякісного сервісного обслуговування. Компанія Glasscar – одна з сервісних компаній, яка надає професійні послуги з обслуговування автомобільного транспорту вітчизняного та зарубіжного виробництва.",
+        "second": "Одним з напрямків діяльності нашої компанії є повний комплекс послуг із заміни лобового та іншого автомобільного скла."
+    }'></include>
+    <include src="./partials/blocks/glass.html"></include>
+    <include src="./partials/section-consultation/section-consultation.html"></include>
+    <include src="./partials/section-segment/segment.html">
+        {
+        "type": "modified"
+        }
+    </include>
+    <include src="./partials/section-reviews/reviews.html">
+        {
+        "type": "modified"
+        }
+    </include>
     <include src="./partials/section-blog/section-blog.html"></include>
     <include src="./partials/section-questions/questions.html"></include>
-    <include src="./partials/section-consultation/section-consultation.html"></include>
     <include src="./partials/seo/seo.html"></include>
     <include src="./partials/map/map.html"></include>
     <include src="./partials/footer/footer.html"></include>

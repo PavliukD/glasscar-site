@@ -29,6 +29,8 @@ import JobsCards from './js/jobsCards'
 import JobsPagination from './js/jobsPagination'
 import Header from './partials/header/header'
 import SectionCatalog from './partials/catalog/sectionCatalog'
+import Images from './partials/blocks/image'
+import BannerSlider from './partials/blocks/bannerSlider'
 
 
 Brands()
@@ -58,4 +60,6 @@ JobsCards()
 JobsPagination()
 Header()
 SectionCatalog()
+Images()
+BannerSlider()
 
