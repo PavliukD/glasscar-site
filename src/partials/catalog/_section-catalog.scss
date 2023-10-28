@@ -97,47 +97,44 @@
 
         &>span{
 
-            display: flex;
-            width: 8%;
-            height: 100%;
-            border: 1px solid #F6F6F3;
-            align-items: center;
-            justify-content: center;
+        display: flex;
+        width: 8%;
+        height: 100%;
+        border: 1px solid #F6F6F3;
+        align-items: center;
+        justify-content: center;
 
-                font-family: Roboto Condensed;
-                font-size: 48px;
+        font-family: Roboto Condensed;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+        /* 100% */
+        letter-spacing: -1.44px;
+        text-transform: uppercase;
+        color: #1A1A1D;
+
+        transition-property: background-color, color;
+        transition-duration: 500ms;
+        transition-delay: 0;
+
+        &:hover{
+            background-color: #4958D1;
+            color: #FFF;
+        }
+
+        @media (max-width: 767px) {
+            font-family: Roboto Condensed;
+                font-size: 32px;
                 font-style: normal;
                 font-weight: 700;
-                line-height: 48px;
+                line-height: 32px;
                 /* 100% */
-                letter-spacing: -1.44px;
+                letter-spacing: -0.96px;
                 text-transform: uppercase;
-                color: #1A1A1D;
+                width: 15%;
+        }
 
-                @media (max-width: 767px) {
-                    font-family: Roboto Condensed;
-                        font-size: 32px;
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height: 32px;
-                        /* 100% */
-                        letter-spacing: -0.96px;
-                        text-transform: uppercase;
-                        width: 15%;
-                }
-
-            // &>span {
-            //     font-family: Roboto Condensed;
-            //     font-size: 48px;
-            //     font-style: normal;
-            //     font-weight: 700;
-            //     line-height: 48px;
-            //     /* 100% */
-            //     letter-spacing: -1.44px;
-            //     text-transform: uppercase;
-            //     color: #1A1A1D;
-                
-            // }
         }
 
         &>ul{
