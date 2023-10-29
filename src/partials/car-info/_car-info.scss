@@ -99,7 +99,7 @@
 
         @media (max-width: 767px) {
             overflow: scroll;
-            width: fit-content;
+            width: 100%;
         }
 
         &>h3{
@@ -127,6 +127,7 @@
                     /* 100% */
                     letter-spacing: -0.42px;
                     text-transform: uppercase;
+                    width: 250%;
             
             }
         }
@@ -135,7 +136,9 @@
             display: grid;
             grid-template-columns: 2fr 2fr 5fr 1fr 2fr;
 
-            width: 250%;
+            @media (max-width: 767px) {
+                width: 250%;
+            }
 
             &:nth-child(2n) {
                 background-color: #F6F6F3;

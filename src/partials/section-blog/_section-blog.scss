@@ -1,11 +1,16 @@
 @import '../../sass/container';
 
-.services{
+.blog{
     @extend .container;
+        padding-top: 140px;
+    
+        @media (max-width: 767px) {
+            padding-top: 80px;
+        }
 
 }
 
-.services--title-wrap{
+.blog--title-wrap{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -90,7 +95,7 @@
     
 }
 
-.services--content{
+.blog--content{
     margin-top: 40px;
 
     @media (min-width: 768px) {

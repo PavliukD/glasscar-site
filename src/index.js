@@ -31,6 +31,7 @@ import Header from './partials/header/header'
 import SectionCatalog from './partials/catalog/sectionCatalog'
 import Images from './partials/blocks/image'
 import BannerSlider from './partials/blocks/bannerSlider'
+import HeroBg from './js/heroBg'
 
 
 Brands()
@@ -62,4 +63,5 @@ Header()
 SectionCatalog()
 Images()
 BannerSlider()
+HeroBg()
 
