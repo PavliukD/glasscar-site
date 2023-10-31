@@ -285,6 +285,11 @@
         margin-top: 40px;
         align-items: center;
         gap: 4px;
+        margin-bottom: 80px;
+
+        @media (max-width: 767px) {
+            margin-top: 40px;
+        }
 
         & span{
             margin-left: auto;
@@ -350,7 +355,7 @@
         justify-content: space-between;
         margin-top: 80px;
 
-        & button{
+        & a{
             width: 40px;
             height: 40px;
             border-radius: 100%;

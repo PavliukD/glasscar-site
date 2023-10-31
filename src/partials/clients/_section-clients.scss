@@ -6,6 +6,10 @@
 
 .clients--list{
     @extend .about--list;
+
+    @media (max-width: 767px) {
+        margin-top: 40px;
+    }
 }
 
 .clients--list-item{

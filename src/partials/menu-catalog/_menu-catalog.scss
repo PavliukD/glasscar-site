@@ -9,9 +9,9 @@
     transform: translateX(-50%);
     height: 0px;
     overflow: hidden;
-    z-index: 5;
+    z-index: 4;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1100px) {
             background-color: black;
             bottom: 120px;
             top: auto;
@@ -50,7 +50,7 @@
 
             width: 32.1%;
 
-            @media (max-width: 767px) {
+            @media (max-width: 1100px) {
                 width: 100%;
                 margin-top: 24px;
             }
@@ -59,7 +59,7 @@
                 &:not(:first-child) {
                     margin-top: 16px;
 
-                    @media (max-width: 767px) {
+                    @media (max-width: 1100px) {
                             margin-top: 12px;
                         }
                 }
@@ -70,7 +70,7 @@
             width: 32.1%;
             margin-left: 8.5%;
 
-            @media (max-width: 767px) {
+            @media (max-width: 1100px) {
                     width: 100%;
                     margin-left: 0;
                 }
@@ -109,7 +109,7 @@
                 text-transform: uppercase;
                 color: #FFF;
 
-                @media (max-width: 767px) {
+                @media (max-width: 1100px) {
                         font-family: Roboto Condensed;
                         font-size: 24px;
                         font-style: normal;
@@ -133,7 +133,7 @@
                 stroke: #FFF;
                 opacity: 0;
 
-                @media (max-width: 767px) {
+                @media (max-width: 1100px) {
                         opacity: 1;
                         width: 24px;
                         height: 24px;
@@ -156,7 +156,7 @@
             max-width: 315px;
             margin-top: 20px;
 
-            @media (max-width: 767px) {
+            @media (max-width: 1100px) {
                     font-family: Manrope;
                     font-size: 14px;
                     font-style: normal;
@@ -186,7 +186,7 @@
     stroke: #FFF;
     opacity: 0.4;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1100px) {
             display: none;
         }
 }

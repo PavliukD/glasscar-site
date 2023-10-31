@@ -15,7 +15,7 @@ footer{
         gap: 32px;
         position: relative;
 
-        @media (min-width: 768px) {
+        @media (min-width: 1100px) {
             grid-template-columns: 1fr 3fr;
         }
     }
@@ -30,7 +30,7 @@ footer{
         color: #FFF;
         margin-bottom: 16px;
 
-        @media (min-width: 768px) {
+        @media (min-width: 1100px) {
             font-family: Manrope;
             font-size: 18px;
             font-style: normal;
@@ -48,7 +48,7 @@ footer{
         line-height: 22px;
         color: #FFF;
 
-        @media (min-width: 768px) {
+        @media (min-width: 1100px) {
             font-family: Manrope;
             font-size: 16px;
             font-style: normal;
@@ -61,7 +61,7 @@ footer{
 
 .footer-nav{
 
-    @media (min-width: 768px) {
+    @media (min-width: 1100px) {
         width: 196px;
 
         
@@ -75,12 +75,12 @@ footer{
         &:not(:first-child){
             margin-top: 4px;
 
-            @media (min-width: 768px) {
+            @media (min-width: 1100px) {
                 margin-top: 8px;
             }
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 1100px) {
             &:hover{
                 &> svg{
                     opacity: 1;
@@ -98,7 +98,7 @@ footer{
         height: 16px;
         stroke: #FFF;
 
-        @media (min-width: 768px) {
+        @media (min-width: 1100px) {
             opacity: 0;
 
             transition-property: opacity;
@@ -115,7 +115,7 @@ footer{
         line-height: 22px;
         color: #FFF;
 
-        @media (min-width: 768px) {
+        @media (min-width: 1100px) {
             font-family: Manrope;
             font-size: 16px;
             font-style: normal;
@@ -142,7 +142,7 @@ footer{
     padding-bottom: 32px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.40);
 
-    @media (min-width: 768px) {
+    @media (min-width: 1100px) {
         display: flex;
         justify-content: space-between;
         padding-bottom: 80px;
@@ -154,14 +154,14 @@ footer{
         justify-content: space-between;
        
 
-        @media (min-width: 768px) {
+        @media (min-width: 1100px) {
             flex-direction: column;
         }
 
         & > p{
             width: 271px;
 
-            @media (min-width: 768px) {
+            @media (min-width: 1100px) {
                 max-width: 300px;
                 font-weight: 500;
             }
@@ -181,7 +181,7 @@ footer{
         display: inline-block;
         margin-top: 40px;
 
-        @media (min-width: 768px) {
+        @media (min-width: 1100px) {
             font-family: Roboto Condensed;
             font-size: 96px;
             font-style: normal;
@@ -198,7 +198,7 @@ footer{
     // grid-column-start: 1;
     // grid-column-end: 2;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1100px) {
         // grid-column-start: 2;
         // grid-column-end: 3;
         display: flex;
@@ -218,7 +218,7 @@ footer{
     flex-direction: column;
     justify-content: space-between;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1100px) {
         // grid-column-start: 3;
         // grid-column-end: 4;
 
@@ -239,7 +239,7 @@ footer{
         opacity: 0.4;
         margin-top: 16px;
         
-        @media (min-width: 768px) {
+        @media (min-width: 1100px) {
             font-family: Manrope;
             font-size: 16px;
             font-style: normal;
@@ -256,7 +256,7 @@ footer{
             stroke: #FFF;
             margin-left: 6px;
 
-            @media (min-width: 768px) {
+            @media (min-width: 1100px) {
                 display: none;
             }
         }
@@ -285,12 +285,12 @@ footer{
         &:not(:first-child) {
             margin-top: 4px;
 
-            @media (min-width: 768px) {
+            @media (min-width: 1100px) {
                 margin-top: 8px;
             }
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 1100px) {
             &:hover{
                 &> svg{
                     opacity: 1;
@@ -308,7 +308,7 @@ footer{
             height: 16px;
             stroke: #FFF;
 
-            @media (min-width: 768px) {
+            @media (min-width: 1100px) {
                 opacity: 0;
 
                 transition-property: opacity;
@@ -325,7 +325,7 @@ footer{
         line-height: 22px;
         color: #FFF;
 
-        @media (min-width: 768px) {
+        @media (min-width: 1100px) {
             font-family: Manrope;
             font-size: 16px;
             font-style: normal;
@@ -346,7 +346,7 @@ footer{
     grid-row-start: 2;
     grid-row-end: 3;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1100px) {
     grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 4;
@@ -372,7 +372,7 @@ footer{
     border-top: 1px solid rgba(255, 255, 255, 0.40);
     display: none;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1100px) {
         display: block;
         grid-column-start: 1;
         grid-column-end: 2;
@@ -389,7 +389,7 @@ footer{
         width: 100%;
         height: auto;
 
-        @media (min-width: 768px) {
+        @media (min-width: 1100px) {
             height: 40px;
             width: 247px;
         }
@@ -398,7 +398,7 @@ footer{
     & p{
         width: 130px;
 
-        @media (min-width: 768px) {
+        @media (min-width: 1100px) {
             width: 144px;
             margin-top: 176px;
         }
@@ -407,7 +407,7 @@ footer{
     & span{
         display: none;
 
-        @media (min-width: 768px) {
+        @media (min-width: 1100px) {
             display: block;
             font-family: Manrope;
             font-size: 16px;
@@ -428,7 +428,7 @@ footer{
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1100px) {
         // grid-column-start: 4;
         // grid-column-end: 5;
         display: flex;
@@ -446,7 +446,7 @@ footer{
     border: none;
     background-color: transparent;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1100px) {
         // gap: 85px;
         right: 6.9%;
         
@@ -460,7 +460,7 @@ footer{
         line-height: 22px; 
         color: #FFF;
 
-        @media (min-width: 768px) {
+        @media (min-width: 1100px) {
             font-family: Manrope;
             font-size: 16px;
             font-style: normal;
@@ -483,7 +483,7 @@ footer{
     gap: 24px;
     margin-left: auto;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1100px) {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
@@ -519,7 +519,7 @@ footer{
     display: flex;
     flex-direction: column;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1100px) {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 3;
@@ -560,7 +560,7 @@ footer{
             opacity: 0.4;
             color: #FFF;
 
-            @media (min-width: 768px) {
+            @media (min-width: 1100px) {
                 font-family: Manrope;
                 font-size: 16px;
                 font-style: normal;
@@ -574,7 +574,7 @@ footer{
             }
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 1100px) {
             margin-top: 30%;
 
             &:hover{
@@ -595,7 +595,7 @@ footer{
             stroke: #FFF;
             margin-left: 6px;
 
-            @media (min-width: 768px) {
+            @media (min-width: 1100px) {
                 opacity: 0;
 
                 transition-property: opacity;

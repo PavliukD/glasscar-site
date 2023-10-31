@@ -26,7 +26,7 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 16px;
 
-            @media (max-width: 767px) {
+            @media (max-width: 1000px) {
                 display: flex;
                 flex-direction: column;
             }
@@ -197,6 +197,91 @@
                     max-width: 196px;
                 }
 
+            }
+        }
+
+        &>table{
+            border-collapse: collapse;
+
+            @media (max-width: 767px) {
+                width: 250%;
+            }
+
+            & tr{
+                &:nth-child(2n+1){
+                    & td{
+                        background-color: #F6F6F3;
+                        border: 1px solid #FFF;
+                    }
+                }
+                &:nth-child(2n) {
+                    & td {
+                        border: 1px solid #F6F6F3;
+                    }
+                }
+            }
+
+            & th{
+                padding: 16px;
+
+                font-family: Manrope;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 24px;
+                color: #1A1A1D;
+                background-color: #F6F6F3;
+                border: none;
+                border: 1px solid #FFF;
+            
+                @media (max-width: 767px) {
+                    font-family: Manrope;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 14px;
+
+                }
+            }
+
+            & td{
+                padding: 16px;
+                
+                font-family: Manrope;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                color: #1A1A1D;
+            
+                // border: 1px solid #F6F6F3;
+            
+                @media (max-width:767px) {
+                    font-family: Manrope;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 16px;
+                    width: 100%;
+                    // border: 0.5px solid #F6F6F3;
+                }
+            }
+
+            & th,
+            & td{
+                text-align: left;
+                &:nth-child(1){
+                    width: 17%;
+                }
+                &:nth-child(2) {
+                    width: 17%;
+                }
+                &:nth-child(3) {
+                    width: 42.5%;
+                }
+                &:nth-child(4) {
+                    width: 8.5%;
+                }
             }
         }
     }

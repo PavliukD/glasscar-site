@@ -1,15 +1,19 @@
 .reviews{
     padding-top: 80px;
-    // padding-bottom: 80px;
+    padding-bottom: 80px;
     background-color: #F6F6F3;
 
     @media (min-width: 768px) {
         padding-top: 160px;
-        // padding-bottom: 160px;
+        padding-bottom: 160px;
     }
 
     &.modified{
         padding-bottom: 160px;
+
+        @media (max-width: 767px) {
+            padding-bottom: 80px;
+        }
         &>img{
             display: none;
         }

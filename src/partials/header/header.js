@@ -5,11 +5,13 @@ export default function Header() {
     const catalogBtn = header.querySelector('.salary')
     const catalogMenu = document.querySelector('.menu-catalog')
     const catalogMobileBtn = menu.querySelector('.sell-glass')
+    const catalogMenuHeight = catalogMenu.scrollHeight
 
 
     const aboutBtn = header.querySelector('.about-btn')
     const aboutMenu = document.querySelector('.menu-about')
     const aboutMobileBtn = menu.querySelector('.about-us')
+    const aboutMenuHeight = aboutMenu.scrollHeight
 
     catalogBtn.addEventListener('click', () => {
         catalogMenu.classList.toggle('open')
@@ -30,9 +32,7 @@ export default function Header() {
             return
         }
 
-        console.log('click')
-
-        catalogMenu.style.height = `${catalogMenu.scrollHeight}px`
+        catalogMenu.style.height = `fit-content`
         // catalogMenu.style.height = `${window.innerHeight}px`
     })
 
@@ -49,6 +49,7 @@ export default function Header() {
 
     aboutMobileBtn.addEventListener('click', () => {
         aboutMenu.classList.toggle('open')
+        console.dir(aboutMenu)
 
         if (!aboutMenu.classList.contains('open')) {
             aboutMenu.style.height = '0px'
@@ -56,7 +57,7 @@ export default function Header() {
         }
 
 
-        aboutMenu.style.height = `${aboutMenu.scrollHeight}px`
-        // aboutMenu.style.height = `${window.innerHeight}px`
+        aboutMenu.style.height = `fit-content`
+
     })
 }

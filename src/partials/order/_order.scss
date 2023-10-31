@@ -52,6 +52,14 @@
                     line-height: 22px;
                     color: #1A1A1D;
                     opacity: 0.4;
+
+                    @media (max-width:767px) {
+                        font-family: Manrope;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 16px;
+                    }
                 }
         }
 
