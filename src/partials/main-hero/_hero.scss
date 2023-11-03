@@ -110,6 +110,7 @@
     }
 
     & p{
+        display: block;
         font-family: Manrope;
         font-size: 12px;
         font-style: normal;
@@ -117,13 +118,20 @@
         line-height: 16px;
         color: #FFF;
         width: 90%;
+        height: 48px;
+        overflow: hidden;
+            color: var(--main-white, #FFF);
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            text-wrap: wrap;
 
-        @media (min-width: 110px) {
+        @media (min-width: 1100px) {
             font-family: Manrope;
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
             line-height: 24px;
+            height: 72px;
             
         }
     }

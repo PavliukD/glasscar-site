@@ -8,7 +8,9 @@ export default function SectionCatalog() {
     const list = catalog.querySelector('.catalog-cars')
 
     const items = [...list.children]
-    items.forEach(item => {
+
+        items.forEach(item => {
         item.style.height = `${item.scrollHeight}px`
     })
+
 }

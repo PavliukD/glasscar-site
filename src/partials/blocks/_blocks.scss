@@ -11,6 +11,8 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
     & h2{
@@ -24,7 +26,7 @@
         text-transform: uppercase;
         color: #1A1A1D;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1100px) {
             font-family: Roboto Condensed;
             font-size: 32px;
             font-style: normal;
@@ -73,7 +75,7 @@
         color: #1A1A1D;
         display: block;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1100px) {
             font-family: Manrope;
                 font-size: 14px;
                 font-style: normal;
@@ -97,6 +99,12 @@
         transition-property: background-color;
         transition-duration: 500ms;
         transition-delay: 0;
+
+        &.mobile{
+            @media (min-width: 768px) {
+                display: none;
+            }
+        }
 
         &:hover {
             background-color: transparent;
@@ -180,7 +188,7 @@
                 color: #1A1A1D;
                 max-width: 376px;
 
-                @media (max-width: 767px) {
+                @media (max-width: 1100px) {
                         font-family: Manrope;
                         font-size: 14px;
                         font-style: normal;
@@ -188,6 +196,8 @@
                         line-height: 22px;
                         max-width: 65%;
                     }
+                
+                    
             }
 
             &>span{
@@ -200,7 +210,7 @@
                 margin-left: auto;
                 margin-right: 0;
 
-                @media (max-width: 767px) {
+                @media (max-width: 1100px) {
                     font-family: Manrope;
                     font-size: 14px;
                     font-style: normal;
@@ -218,9 +228,14 @@
         font-weight: 400;
         line-height: 24px;
         color: #1A1A1D;
-        display: flex;
+        padding-left: 28px;
+        position: relative;
 
         @media (max-width: 767px) {
+            padding-left: 16px;
+        }
+
+        @media (max-width: 1100px) {
                 font-family: Manrope;
                 font-size: 14px;
                 font-style: normal;
@@ -230,14 +245,33 @@
 
         &::before{
             content: '*';
-            display: block;
+            display: inline;
             font-family: Manrope;
-            font-size: 24px;
+            font-size: 22px;
+            // padding-top: 10px;
             font-style: normal;
             font-weight: 600;
-            line-height: 24px;
+            // line-height: 24px;
             color: #4958D1;
-            margin-right: 16px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            // margin-top: 10px;
+
+        }
+
+        &>span {
+            color: var(--main-black, #1A1A1D);
+            font-family: Manrope;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
+
+            @media (max-width: 1100px) {
+                font-size: 14px;
+                line-height: 22px;
+            }
         }
     }
 
@@ -341,7 +375,7 @@
                 color: #1A1A1D;
                 max-width: 376px;
 
-                @media (max-width: 767px) {
+                @media (max-width: 1100px) {
                         font-family: Manrope;
                         font-size: 14px;
                         font-style: normal;
@@ -402,7 +436,7 @@
         line-height: 24px;
         color: #1A1A1D;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1100px) {
                 font-family: Manrope;
                 font-size: 14px;
                 font-style: normal;
@@ -446,7 +480,7 @@
         display: flex;
         gap: 16px;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1100px) {
             font-family: Roboto Condensed;
                 font-size: 20px;
                 font-style: normal;
@@ -737,7 +771,7 @@
         line-height: 24px;
         color: #1A1A1D;
 
-        @media (max-width:767px) {
+        @media (max-width:1100px) {
             font-family: Manrope;
                 font-size: 14px;
                 font-style: normal;
@@ -823,7 +857,7 @@
         line-height: 24px;
         color: #1A1A1D;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1100px) {
                 font-family: Manrope;
                 font-size: 14px;
                 font-style: normal;

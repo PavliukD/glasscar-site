@@ -1,3 +1,5 @@
+@import '../../sass/container';
+
 .about{
     @media (min-width: 768px) {
         padding-top: 60px;
@@ -5,16 +7,18 @@
 }
 
 .about--list{
-    @media (min-width: 768px) {
-        width: 100%;
-        max-width: 1440px;
-        margin: auto;
-        padding-left: 72px;
-        padding-right: 72px;
-    }
+    // @media (min-width: 768px) {
+    //     width: 100%;
+    //     max-width: 1440px;
+    //     margin: auto;
+    //     padding-left: 72px;
+    //     padding-right: 72px;
+    // }
+    @extend .container;
 }
 
 .about--list-item{
+    
 
     @media (min-width: 768px) {
         // display: flex;
@@ -60,7 +64,7 @@
         color: #1A1A1D;
         opacity: 0.4;
 
-        @media (min-width: 768px) {
+        @media (min-width: 1100px) {
             font-family: Manrope;
             font-size: 14px;
             font-style: normal;
@@ -91,7 +95,7 @@
         margin-top: 14px;
         color: #1A1A1D;
 
-        @media (min-width: 768px) {
+        @media (min-width: 1100px) {
             font-family: Roboto Condensed;
             font-size: 48px;
             font-style: normal;
@@ -112,7 +116,7 @@
         margin-top: auto;
         display: block;
 
-        @media (min-width: 768px) {
+        @media (min-width: 1100px) {
             font-family: Manrope;
             font-size: 16px;
             font-style: normal;
@@ -136,7 +140,7 @@
     margin-left: 0;
     margin-right: auto;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1100px) {
         height: 48px;
         padding: 0 24px;
         direction: ltr;
@@ -157,7 +161,7 @@
         line-height: 16px;
         color: #FFF;
 
-        @media (min-width: 768px) {
+        @media (min-width: 1100px) {
             font-family: Manrope;
             font-size: 14px;
             font-style: normal;
@@ -171,11 +175,25 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 480px;
+    height: 445px;
     padding-top: 40px;
     padding-bottom: 40px;
 
     @media (min-width: 768px) {
+            height: 100%;
+    
+            &.container {
+                // height: 100%;
+                padding-left: 20px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                margin: 0;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+        }
+
+    @media (min-width: 1100px) {
         height: 100%;
 
         &.container{
