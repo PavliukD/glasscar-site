@@ -10,7 +10,7 @@
         position: relative;
         z-index: 2;
 
-        @media (min-width: 768px) {
+        @media (min-width: 1100px) {
             padding-top: 160px;
             padding-bottom: 160px;
         }
@@ -21,6 +21,18 @@
             overflow: hidden;
 
             @media (min-width: 768px) {
+                display: grid;
+                grid-template-columns: 50px calc(100% - 50px);
+                gap: 12px;
+
+                &>p{
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                }
+            }
+
+
+            @media (min-width: 1100px) {
                 display: flex;
                 gap: 24px;
                 justify-content: center;
@@ -90,6 +102,17 @@
                 z-index: 1;
 
                 @media (min-width: 768px) {
+                        font-family: Roboto Condensed;
+                        font-size: 72px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 84.375%;
+                        /* 84.375% */
+                        letter-spacing: -2.88px;
+                        text-transform: uppercase;
+                    }
+
+                @media (min-width: 1100px) {
                     font-family: Roboto Condensed;
                     font-size: 96px;
                     font-style: normal;
@@ -137,17 +160,21 @@
                 transition-property: margin, height;
                 z-index: 1;
 
-
                 @media (min-width: 768px) {
+                    font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                }
+
+
+                @media (min-width: 1100px) {
                     
                     width: 0;
                     height: 72px;
                     overflow: hidden;
                     font-family: Manrope;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 24px;
+                    
                     margin-top: 0;
 
                     transition-property: width;

@@ -48,6 +48,16 @@
         align-items: center;
         justify-content: center;
         gap: 8px;
+
+        transition-property: opacity;
+        transition-duration: 500ms;
+        transition-delay: 0;
+
+        @media (min-width: 1100px) {
+            &:hover{
+                opacity: 0.4;
+            }
+        }
     }
 
     & span{
@@ -99,6 +109,15 @@
             height: 24px;
         }
     }
+
+    & a{
+        transition-property: opacity;
+        transition-duration: 500ms;
+        transition-delay: 0;
+        &:hover{
+            opacity: 0.4;
+        }
+    }
 }
 
 .header--language-switch {
@@ -138,10 +157,23 @@
             // height: 40px;
         }
 
+        &.disabled{
+            background-color: rgba(255, 255, 255, 0.4);
+            color: #fff;
+            opacity: 1;
+            
+        }
+
         &.active {
             background-color: #FFF;
             color: #2A3489;
-            opacity: 1;
+            opacity: 1;   
+
+            &.disabled{
+                background-color: transparent;
+                color: #FFF;
+                opacity: 0.4;
+            }         
         }
     }
 }
@@ -226,6 +258,14 @@
             transition-property: color, background-color;
             transition-duration: 500ms;
             transition-delay: 0;
+
+            @media (min-width: 1100px) {
+                font-family: Manrope;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 22px;
+            }
 
             &.menu-install {
                 background-color: #FFF;

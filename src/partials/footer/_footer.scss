@@ -125,6 +125,8 @@ footer{
             transition-property: margin-left;
             transition-duration: 500ms;
             transition-delay: 0;
+
+            
         }
     }
 }
@@ -180,16 +182,33 @@ footer{
         margin: auto;
         display: inline-block;
         margin-top: 40px;
+        // leading-trim: both;
+        // text-edge: cap;
+
+        // -webkit-text-stroke: 1px #FFFFFF;
+        // text-stroke: 1px #FFFFFF;
+        // -webkit-text-fill-color: #2A3489;
+        transition-property: color, text-shadow;
+        transition-duration: 500ms;
+        transition-delay: 0;
+        
+
 
         @media (min-width: 1100px) {
             font-family: Roboto Condensed;
-            font-size: 96px;
+            font-size: 92px;
             font-style: normal;
             font-weight: 700;
             line-height: 81px; /* 84.375% */
             letter-spacing: -2.88px;
             text-transform: uppercase;
             margin: 0;
+
+
+            &:hover{
+                color: #2A3489;
+                text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+            }
         }
     }
 }
@@ -390,8 +409,18 @@ footer{
         height: auto;
 
         @media (min-width: 1100px) {
-            height: 40px;
-            width: 247px;
+            height: 24px;
+            width: 149px;
+        }
+    }
+
+    & a{
+        transition-property: opacity;
+        transition-duration: 500ms;
+        transition-delay: 0;
+
+        &:hover{
+            opacity: 0.4;
         }
     }
 

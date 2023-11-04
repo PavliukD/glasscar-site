@@ -19,6 +19,12 @@ export default function Questions() {
     items.forEach(item => {
         const text = item.querySelector('p')
         item.addEventListener('click', () => {
+            items.forEach(itm => {
+                const txt = itm.querySelector('p')
+                itm.classList.remove('active')
+                txt.style.height = `0px`
+            })
+
             item.classList.toggle('active')
             if (!item.classList.contains('active')) {
                 text.style.height = `0px`
