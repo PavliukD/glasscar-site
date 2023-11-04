@@ -95,15 +95,37 @@
         background: #fff;
         border: none;
         margin-top: 40px;
+        
 
         @media (min-width: 768px) {
             margin-top: 70px;
+            border: 1.4px solid #fff;
+
+            transition-property: background-color;
+            transition-duration: 500ms;
+            transition-delay: 0;
+
+            &:hover{
+                background-color: transparent;
+
+                &>svg{
+                    stroke: #fff;
+                }
+
+                &>span{
+                    color: #fff;
+                }
+            }
         }
 
         & > svg{
             width: 16px;
             height: 16px;
             stroke: #2A3489;
+
+            transition-property: stroke;
+            transition-duration: 500ms;
+            transition-delay: 0;
         }
 
         & > span{
@@ -113,6 +135,10 @@
             font-weight: 800;
             line-height: 16px;
             color: #2A3489;
+
+            transition-property: color;
+            transition-duration: 500ms;
+            transition-delay: 0;
 
             &.mobile{
                 @media (min-width: 768px) {
