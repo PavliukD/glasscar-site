@@ -116,7 +116,7 @@
 .page-hero--image-wrap{
     position: absolute;
     width: 100%;
-    height: 520px;
+    height: 478px;
     z-index: -3;
     top: 0;
 
@@ -155,6 +155,7 @@
 .services-hero{
     transform: scale(-1, 1);
     background-size: 100%;
+    background-position: 0 5%;
 
     @media (max-width: 767px) {
         background-size: 200%;

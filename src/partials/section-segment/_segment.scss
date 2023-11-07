@@ -1,8 +1,13 @@
 .segment{
-    background-color: #2A3489;
+    background-color: #4958D1;
     padding-top: 80px;
     padding-bottom: 80px;
     margin-top: 80px;
+
+    @media (min-width: 768px) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 
     @media (min-width: 1100px) {
         margin-top: 140px;
@@ -18,8 +23,8 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 100px 0;
         position: relative;
-        padding-top: 160px;
-        padding-bottom: 160px;
+        padding-top: 140px;
+        padding-bottom: 140px;
     }
     }
 
@@ -244,13 +249,14 @@
 .segment--brand{
     display: block;
     width: 100%;
-    padding-top: 32%;
-    padding-bottom: 32%;
+    padding-top: 34%;
+    padding-bottom: 34%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 80px;
     margin-bottom: 80px;
+    max-height: 240px;
 
     transition-property: background-image;
     transition-duration: 1000ms;
@@ -259,10 +265,10 @@
     @media (min-width: 768px) {
         margin-top: 0;
         margin-bottom: 0;
-
+        max-height: 220px;
         max-width: 306px;
-        padding-top: 17%;
-        padding-bottom: 17%;
+        padding-top: 27%;
+        padding-bottom: 27%;
     }
 }
 
@@ -298,5 +304,23 @@
 }
 
 .segment--content-wrap{
-    max-width: 416px;
+    
+    width: 100%;
+    margin-top: 60px;
+}
+
+.segment-wrap{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 100%;
+    
+    
+
+    @media (min-width: 768px) {
+        max-width: 416px;
+        margin-left: auto;
+            margin-right: 0;
+    }
 }
