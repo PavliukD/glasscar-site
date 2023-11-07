@@ -32,6 +32,7 @@ import SectionCatalog from './partials/catalog/sectionCatalog'
 import Images from './partials/blocks/image'
 import BannerSlider from './partials/blocks/bannerSlider'
 import HeroBg from './js/heroBg'
+import InfoMobile from './js/infoMobile'
 
 
 Brands()
@@ -64,4 +65,5 @@ SectionCatalog()
 Images()
 BannerSlider()
 HeroBg()
+InfoMobile()
 

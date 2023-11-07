@@ -2,6 +2,12 @@
 
 .clients{
     @extend .about;
+    padding-top: 0;
+    margin-top: 80px;
+
+    @media (min-width: 768px) {
+        margin-top: 140px;
+    }
 }
 
 .clients--list{

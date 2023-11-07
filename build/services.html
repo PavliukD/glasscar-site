@@ -79,7 +79,7 @@
                 <a href="./blog.html">Блог</a>
                 <a href="">Контакти</a>
             </nav>
-            <button class="header--call-button">
+            <button class="header--call-button" data-info="mobile">
                 <svg>
                     <use href="images/icons.svg#phone"></use>
                 </svg>
@@ -92,6 +92,11 @@
                 </svg>
                 <svg class="header--menu-button-icon cross hidden">
                     <use href="images/icons.svg#cross-2"></use>
+                </svg>
+            </button>
+            <button class="header--back-button hidden">
+                <svg>
+                    <use href="images/icons.svg#arrow-left"></use>
                 </svg>
             </button>
             <div class="header--desctop-linksset">
@@ -567,6 +572,12 @@
                         </svg>
                     </li>
                     <li>
+                        <a href="./about-us.html">Чому ми?</a>
+                        <svg>
+                            <use href="images/icons.svg#arrow-right"></use>
+                        </svg>
+                    </li>
+                    <li>
                         <a href="./blog.html">Блог</a>
                         <svg>
                             <use href="images/icons.svg#arrow-right"></use>
@@ -591,12 +602,6 @@
                     </li>
                     <li>
                         <a href="./install">Заміна автоскла</a>
-                        <svg>
-                            <use href="images/icons.svg#arrow-right"></use>
-                        </svg>
-                    </li>
-                    <li>
-                        <a href="">Послуги електрика</a>
                         <svg>
                             <use href="images/icons.svg#arrow-right"></use>
                         </svg>
@@ -1225,7 +1230,7 @@
         </ul>
     </div>
 </div>
-        <div class="menu hidden">
+    <div class="menu hidden">
     <div class="container">
         <nav>
             <ul>
@@ -1296,6 +1301,44 @@
             <button class="menu-install" data-install="">Встановлення автоскла</button>
             <button class="menu-repair" data-repair="">Ремонт автоскла</button>
         </div>
+    </div>
+</div>
+    <div class="popup info-mobile hidden" data-popup="info-mobile">
+    <div class="popup--title">
+        <span>Інформація</span>
+        <button>
+            <svg>
+                <use href="images/icons.svg#cross-2"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="popup--info-mobile">
+        <a href="">
+            <svg>
+                <use href="images/icons.svg#location"></use>
+            </svg>
+            <p>Україна, Київ,<br>
+            вул. Бориспільська 44</p>
+        </a>
+        <div>
+            <svg>
+                <use href="images/icons.svg#clock"></use>
+            </svg>
+            <p>Пн-Пт - 9:00-19:00<br>
+            Сб - Нд - Вихідні</p>
+        </div>
+        <a href="">
+            <svg>
+                <use href="images/icons.svg#telegram"></use>
+            </svg>
+            <p>Написати у телеграм</p>
+        </a>
+        <a href="">
+            <svg>
+                <use href="images/icons.svg#phone"></use>
+            </svg>
+            <p>+38 067 536 96 96</p>
+        </a>
     </div>
 </div>
 </body>

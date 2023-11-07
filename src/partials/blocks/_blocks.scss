@@ -25,6 +25,11 @@
         letter-spacing: -1.44px;
         text-transform: uppercase;
         color: #1A1A1D;
+         
+        @media (min-width: 768px) {
+            max-width: 526px;
+            display: block;
+        }
 
         @media (max-width: 1100px) {
             font-family: Roboto Condensed;
@@ -35,6 +40,7 @@
             /* 100% */
             letter-spacing: -0.96px;
             text-transform: uppercase;
+            
         }
     }
 
@@ -480,6 +486,11 @@
         display: flex;
         gap: 16px;
 
+        @media (min-width: 768px) {
+            max-width: 526px;
+                display: block;
+        }
+
         @media (max-width: 1100px) {
             font-family: Roboto Condensed;
                 font-size: 20px;
@@ -489,6 +500,7 @@
                 /* 100% */
                 letter-spacing: -0.6px;
                 text-transform: uppercase;
+                
         }
 
         &.plus{

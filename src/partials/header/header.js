@@ -1,6 +1,7 @@
 export default function Header() {
     const header = document.querySelector('.header')
     const menu = document.querySelector('.menu')
+    const headerMain = header.querySelector('.header--main')
 
     const catalogBtn = header.querySelector('.salary')
     const catalogMenu = document.querySelector('.menu-catalog')
@@ -13,8 +14,11 @@ export default function Header() {
     const aboutMobileBtn = menu.querySelector('.about-us')
     const aboutMenuHeight = aboutMenu.scrollHeight
 
+    const backBtn = header.querySelector('.header--back-button')
+
     catalogBtn.addEventListener('click', () => {
         catalogMenu.classList.toggle('open')
+        headerMain.classList.toggle('header-active')
 
         if (!catalogMenu.classList.contains('open')) {
             catalogMenu.style.height = '0px'
@@ -25,19 +29,13 @@ export default function Header() {
     })
     
     catalogMobileBtn.addEventListener('click', () => {
-        catalogMenu.classList.toggle('open')
-
-        if (!catalogMenu.classList.contains('open')) {
-            catalogMenu.style.height = '0px'
-            return
-        }
-
-        catalogMenu.style.height = `fit-content`
-        // catalogMenu.style.height = `${window.innerHeight}px`
+        CatalogMenuToggle()
+        backBtn.classList.toggle('hidden')
     })
 
     aboutBtn.addEventListener('click', () => {
         aboutMenu.classList.toggle('open')
+        headerMain.classList.toggle('header-active')
 
         if (!aboutMenu.classList.contains('open')) {
             aboutMenu.style.height = '0px'
@@ -48,16 +46,40 @@ export default function Header() {
     })
 
     aboutMobileBtn.addEventListener('click', () => {
-        aboutMenu.classList.toggle('open')
-        console.dir(aboutMenu)
+        AboutMenuToggle()
+        backBtn.classList.toggle('hidden')
+    })
 
-        if (!aboutMenu.classList.contains('open')) {
-            aboutMenu.style.height = '0px'
+    backBtn.addEventListener('click', () => {
+        backBtn.classList.add('hidden')
+        if (aboutMenu.classList.contains('open')) {
+            AboutMenuToggle()
             return
         }
-
-
-        aboutMenu.style.height = `fit-content`
-
+        CatalogMenuToggle()
     })
+}
+
+function AboutMenuToggle() {
+    const aboutMenu = document.querySelector('.menu-about')
+    aboutMenu.classList.toggle('open')
+    
+    if (!aboutMenu.classList.contains('open')) {
+        aboutMenu.style.height = '0px'
+        return
+    }
+
+    aboutMenu.style.height = `fit-content`
+}
+
+function CatalogMenuToggle() {
+    const catalogMenu = document.querySelector('.menu-catalog')
+    catalogMenu.classList.toggle('open')
+
+    if (!catalogMenu.classList.contains('open')) {
+        catalogMenu.style.height = '0px'
+        return
+    }
+
+    catalogMenu.style.height = `fit-content`
 }

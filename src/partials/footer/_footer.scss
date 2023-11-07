@@ -10,10 +10,15 @@ footer{
     
     
     & >.container{
-        display: grid;
-        // grid-template-columns: repeat(2, 1fr);
-        gap: 32px;
+        display: block;
+        
         position: relative;
+
+        @media (min-width: 768px) {
+            display: grid;
+            // grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
 
         @media (min-width: 1100px) {
             grid-template-columns: 1fr 3fr;
@@ -389,7 +394,7 @@ footer{
     grid-column-start: 1;
     grid-column-end: 3;
     border-top: 1px solid rgba(255, 255, 255, 0.40);
-    display: none;
+    margin-top: 32px;
 
     @media (min-width: 1100px) {
         display: block;
@@ -402,15 +407,22 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-top: 0;
     }
 
     & svg{
         width: 100%;
         height: auto;
 
+        max-height: 60px;
+
+        margin-top: 32px;
+        margin-bottom: 32px;
+
         @media (min-width: 1100px) {
             height: 24px;
             width: 149px;
+            margin: 0;
         }
     }
 
@@ -515,6 +527,7 @@ footer{
     @media (max-width: 1100px) {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
+        padding-top: 32px;
     }
 }
 
@@ -548,7 +561,7 @@ footer{
     display: flex;
     flex-direction: column;
 
-    @media (max-width: 1100px) {
+    @media (max-width: 768px) {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 3;
@@ -623,6 +636,8 @@ footer{
             height: 16px;
             stroke: #FFF;
             margin-left: 6px;
+
+            opacity: 0.4;
 
             @media (min-width: 1100px) {
                 opacity: 0;

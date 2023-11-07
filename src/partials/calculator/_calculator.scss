@@ -120,6 +120,7 @@
 
             &:not(:first-child){
                 margin-top: 16px;
+                margin-bottom: 16px;
 
                 @media (min-width: 768px) {
                     margin-top: 0;
@@ -341,8 +342,8 @@
         }
 
         &.right{
-            border: 1.4px solid #2A3489;
-            background-color: #2A3489;
+            border: 1.4px solid #4958D1;
+            background-color: #4958D1;
 
             transition-property: background-color;
             transition-duration: 500ms;
@@ -954,7 +955,7 @@
             border-radius: 100%;
 
             &.active{
-                background-color: #2A3489;
+                background-color: #4958D1;
             }
         }
     }

@@ -10,6 +10,40 @@
         &>.header-info{
             background-color: #1A1A1D;
         }
+
+        & .menu-install{
+            color: #1A1A1D;
+        }
+
+        & .menu-repair{
+            &:hover{
+                color: #1A1A1D;
+            }
+        }
+
+        & .header--language-switch{
+            & .active{
+                color: #1A1A1D;
+            }
+        }
+
+        & .header--call-button{
+            &>svg{
+                stroke: #1A1A1D;
+            }
+        }
+
+        & .header--menu-button{
+            &>svg {
+                    stroke: #1A1A1D;
+                }
+        }
+
+        & .header--back-button{
+            &>svg {
+                    stroke: #1A1A1D;
+            }
+        }
     }
 }
 
@@ -35,6 +69,7 @@
         display: block;
         width: 24px;
         height: 24px;
+        fill: #FFF;
     }
 
     & a{
@@ -89,6 +124,9 @@
 }
 
 .header--main{
+    &.header-active{
+        background-color: #222D87;
+    }
 
     &>.container{
         display: flex;
@@ -329,6 +367,7 @@
         width: 20px;
         height: 20px;
         stroke: #182275;
+        fill: #FFF;
         
     }
 
@@ -402,4 +441,43 @@
             stroke: #FFF;
         }
     }
+}
+
+.header--back-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 200px;
+    background-color: transparent;
+    background-color: #FFF;
+    border: none;
+    padding: 0;
+
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    @media (min-width: 768px) {
+        right: 36px;
+    }
+
+    &>svg {
+        display: block;
+        width: 20px;
+        height: 20px;
+        stroke: #182275;
+
+    }
+
+    &.hidden{
+        display: none;
+    }
+
+    @media (min-width: 1100px) {
+        display: none;
+        
+    }
+
 }
