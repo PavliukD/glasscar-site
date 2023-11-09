@@ -9,8 +9,15 @@ export default function SectionCatalog() {
 
     const items = [...list.children]
 
-        items.forEach(item => {
+    items.forEach(item => {
         item.style.height = `${item.scrollHeight}px`
+    })
+
+    window.addEventListener('resize', () => {
+        items.forEach(item => {
+            item.style.height = `${item.scrollHeight}px`
+            console.log(item.scrollHeight)
+        })
     })
 
 }
